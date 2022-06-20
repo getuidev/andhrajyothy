@@ -2,6 +2,7 @@
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 body{font-family:Mallanna,sans-serif;color:#000;font-size:16px;line-height:1.2;background:#fff;-webkit-text-size-adjust:none}
 a{color:#000;text-decoration:none}
+a:hover{color: #a30000;}
 ol,ul{list-style:none}
 img{max-width:100%;height:inherit}
 table{border-collapse:collapse;border-spacing:0}
@@ -16,9 +17,9 @@ table{border-collapse:collapse;border-spacing:0}
 .customAds{margin:0 0 10px 0;text-align:center}
 .top_head{padding:10px 0}
 .top_head .container{display:flex;align-items:center}
-.top_head .adsCont{margin:0;width:calc(100% - 190px)}
+.top_head .adsCont{margin:0;width:calc(100% - 155px)}
 #toggleNav,.menuNavigation{display:none}
-.site_logo img{max-width:170px;margin-right:20px;display:block}
+.site_logo img{max-width:135px;margin-right:20px;display:block}
 .top_navbar,.top_trending_liks{background:#030a54;min-height:45px}
 .top_trending_liks{display:none}
 .top_navbar{display:flex;align-items:center}
@@ -27,7 +28,9 @@ table{border-collapse:collapse;border-spacing:0}
 .top_navbar ul li:first-child{padding-left:0}
 .top_navbar ul li:last-child::after{display:none}
 .top_navbar ul li a{color:#fff}
+.top_navbar ul li a:hover{color:#a30000}
 .top_navbar ul li svg{width:22px;height:22px;fill:#fff;vertical-align:middle}
+.top_navbar ul li:hover svg{fill: #a30000;}
 .bottom_navbar{background:rgba(0,0,0,.1);min-height:42px;display:flex;align-items:center}
 .bottom_navbar .container{display:flex;align-items:center}
 .bottom_left_menu{flex:1}
@@ -64,9 +67,10 @@ table{border-collapse:collapse;border-spacing:0}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
+.top_head{padding:5px 0}
 .top_head .container{justify-content:space-between}
 .top_head .adsCont{display:none}
-.site_logo img{max-width:105px}
+.site_logo img{max-width:80px}
 #toggleNav{display:block}
 .MenuBtn{float:left;margin:3px 10px 0 0;cursor:pointer;padding:5px 0 3px 0}
 .MenuBtn i{width:24px;display:block;border-top:2px solid #000;padding-top:4px}
