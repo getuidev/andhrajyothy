@@ -13,7 +13,7 @@ table{border-collapse:collapse;border-spacing:0}
 .imgCont img{width:100%;height:inherit}
 .adsCont{text-align:center;clear:both;margin:0 0 10px 0;position:relative;z-index:0;background:#d6cece;min-height:110px;padding-top:2px}
 .adsCont:before{content:"Advertisement";font-size:10px;line-height:16px;display:block;color:#777}
-.customAds{margin:0 0 10px 0}
+.customAds{margin:0 0 10px 0;text-align: center;}
 .top_head{padding:10px 0}
 .top_head .container{display:flex;align-items:center}
 .top_head .adsCont{margin:0;width:calc(100% - 190px)}
