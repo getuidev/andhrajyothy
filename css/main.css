@@ -104,7 +104,7 @@ to{opacity:1}
 .webStories .swiper-pagination{bottom:0}
 .webStories .swiper-pagination-bullet{background:#030a54;opacity:.15}
 .webStories .swiper-pagination-bullet-active{background:#bf0709;opacity:1}
-.twoColumn_Layout .common_wrapper .smallNews_Cont figure{width:49%}
+.twoColumn_Layout .common_wrapper .smallNews_Cont figure{width:49%;margin-right:2%;}
 .twoColumn_Layout .common_wrapper .smallNews_Cont figure:nth-child(even){margin-right:0}
 .twoColumn_Layout .common_wrapper .smallNews_Cont figure:last-child,.twoColumn_Layout .common_wrapper .smallNews_Cont figure:nth-last-child(2){border-bottom:0;margin-bottom:0}
 .vidCarousel_wrapper{background:#000;margin-bottom:20px;padding:10px}
