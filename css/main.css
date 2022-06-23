@@ -9,6 +9,7 @@ table{border-collapse:collapse;border-spacing:0}
 .gutterLHS,.gutterRHS{position:fixed;top:218px;width:160px;height:600px;z-index:1;transition:all .5s ease;display:block}
 .gutterLHS{right:50%;margin-right:500px}
 .gutterRHS{left:50%;margin-left:500px}
+.sticky .gutterLHS,.sticky .gutterRHS{top:0}
 .container-fluid{width:100%;float:left;margin-top:10px}
 .container{max-width:1000px;margin:0 auto;padding:0 10px;width:100%}
 .imgCont img{width:100%;height:inherit}
