@@ -272,14 +272,13 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .detailBody .content,.rightSidebar{width:100%}
 .breadcrumb,.tags_wrapper ul{white-space:nowrap;overflow-x:auto;overflow-y:hidden}
 .detailBody .common_wrapper .smallNews_Cont figure{width:100%}
-.sticky-up .sticky_share{display:none}
-.sticky-down .sticky_share{display:block}
-.sticky-down .sticky_share .shareW{display:flex;justify-content:space-between;align-items:center;background:#030a54;padding:10px;position:fixed;width:100%;top:0;z-index:1}
-.sticky-down .sticky_share .shareW .share_icon,.sticky-down .sticky_share .shareW .suscribe_chanel{display:flex;align-items:center}
-.sticky-down .sticky_share .shareW .share_icon h2{color:#fff;font-weight:400;font-size:16px;margin-right:5px}
-.sticky-down .sticky_share .shareW .share_icon .share_btn{display:block;background:#fff;border-radius:50%;padding:6px}
-.sticky-down .sticky_share .shareW .share_icon svg{height:18px;width:18px;display:block}
-.sticky-down .sticky_share .shareW .suscribe_chanel .youtube_btn{border-radius:4px;padding:6px 11px;font-size:12px;font-weight:600;display:flex;align-items:center;background:#ff1800;color:#fff;margin-right:8px;text-transform:uppercase}
-.sticky-down .sticky_share .shareW .suscribe_chanel .youtube_btn svg{height:14px;width:20px;margin-right:5px}
-.sticky-down .sticky_share .shareW .goognews_btn img{display:block;width:120px}
+.sticky .sticky_share{display:block}
+.sticky .sticky_share .shareW{display:flex;justify-content:space-between;align-items:center;background:#030a54;padding:10px;position:fixed;width:100%;top:0;z-index:1}
+.sticky .sticky_share .shareW .share_icon,.sticky-down .sticky_share .shareW .suscribe_chanel{display:flex;align-items:center}
+.sticky .sticky_share .shareW .share_icon h2{color:#fff;font-weight:400;font-size:16px;margin-right:5px}
+.sticky .sticky_share .shareW .share_icon .share_btn{display:block;background:#fff;border-radius:50%;padding:6px}
+.sticky .sticky_share .shareW .share_icon svg{height:18px;width:18px;display:block}
+.sticky .sticky_share .shareW .suscribe_chanel .youtube_btn{border-radius:4px;padding:6px 11px;font-size:12px;font-weight:600;display:flex;align-items:center;background:#ff1800;color:#fff;margin-right:8px;text-transform:uppercase}
+.sticky .sticky_share .shareW .suscribe_chanel .youtube_btn svg{height:14px;width:20px;margin-right:5px}
+.sticky .sticky_share .shareW .goognews_btn img{display:block;width:120px}
 }

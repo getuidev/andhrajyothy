@@ -588,24 +588,6 @@
             },
         });
     </script>
-    <script>
-        var scrollPos = 0;
-        window.addEventListener('scroll', function () {
-            if ((document.body.getBoundingClientRect()).top > scrollPos) {
-                var body = document.body;
-                body.classList.add("sticky-up");
-                body.classList.remove("sticky-down");
-
-            } else {
-                var body = document.body;
-
-                body.classList.remove("sticky-up");
-                body.classList.add("sticky-down");
-
-            }
-            scrollPos = (document.body.getBoundingClientRect()).top;
-        });
-    </script>
 </body>
 
 </html>
