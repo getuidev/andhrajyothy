@@ -134,9 +134,9 @@
                     <img width="136" height="30" src="images/googlenews.png" alt="">
                 </a>
             </div>
-            <div class="share_icon">
+            <div id="sharenow" class="share_icon">
                 <h2>Share</h2>
-                <i id="share" class="share_btn">
+                <i class="share_btn">
                     <svg>
                         <use href="#share"></use>
                     </svg>
@@ -144,7 +144,7 @@
             </div>
         </div>
         <script>
-            document.querySelector('#share').addEventListener('click', function () {
+            document.querySelector('#sharenow').addEventListener('click', function () {
                 if (typeof navigator.share === 'undefined') {
                     log("No share API available!");
                 } else {
