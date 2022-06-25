@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $(".search-icon").click(function () {
         $("#headerSearch").fadeToggle();
+        $("#headerSearchMob").fadeToggle();
     });
     $("#toggleNav").click(function () {
         $("#megaMenu").slideToggle("slow", function () {
