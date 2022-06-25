@@ -220,11 +220,66 @@
             </div>
         </div>
     </header>
+    <div class="sticky_share">
+        <div class="shareW">
+            <div class="suscribe_chanel">
+                <a href="#" target="_blank" class="youtube_btn">
+                    <svg>
+                        <use href="#youtube"></use>
+                    </svg>
+                    Subscribe
+                </a>
+            </div>
+            <div class="goognews_btn">
+                <a href="#" target="_blank">
+                    <img width="136" height="30" src="images/googlenews.png" alt="">
+                </a>
+            </div>
+            <div id="sharenow" class="share_icon">
+                <h2>Share</h2>
+                <i class="share_btn">
+                    <svg>
+                        <use href="#share"></use>
+                    </svg>
+                </i>
+            </div>
+        </div>
+        <script>
+            document.querySelector('#sharenow').addEventListener('click', function () {
+                if (typeof navigator.share === 'undefined') {
+                    log("No share API available!");
+                } else {
+                    navigator.share({
+                        title: 'Add Title',
+                        url: '#',
+                        text: ''
+                    })
+                }
+            });
+        </script>
+    </div>
     <div class="container-fluid">
         <div class="container">
-            <div class="adsCont HeaderTopAds MobAds"></div>
-            <div class="categoryPage_Wrapper">
+            <div class="detailBody">
                 <div class="leftSidebar">
+                    <div class="theiaStickySidebar">
+                        <div class="socialShare">
+                            <ul>
+                                <li><a class="fb_icon" title="FaceBook" target="_blank" href="#"
+                                        rel="nofollow noopener"></a></li>
+                                <li><a class="tw_icon" title="Twitter" target="_blank" href="#"
+                                        rel="nofollow noopener"></a></li>
+                                <li><a class="link_icon" title="linkedin" target="_blank" href="#"
+                                        rel="nofollow noopener"></a></li>
+                                <li><a class="wap_icon" title="whatsapp" target="_blank" href="#"
+                                        rel="nofollow noopener"></a></li>
+                                <li><a class="tel_icon" title="telegram" target="_blank" href="#"
+                                        rel="nofollow noopener"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content articleBodyCont">
                     <div class="theiaStickySidebar">
                         <ol class="breadcrumb">
                             <li>
@@ -241,163 +296,61 @@
                                 </div>
                             </li>
                         </ol>
-                        <div class="category_content">
-                            <div class="commonHD">
-                                <h1>తాజా వార్తలు</h1>
-                            </div>
-                            <div class="category_content_listing">
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle376.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle392.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle395.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle396.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle399.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle400.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle405.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle407.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle406.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <div class="image_wrap">
-                                        <a href=""><img width="210" height="140" src="images/Rectangle408.jpeg"
-                                                alt=""></a>
-                                    </div>
-                                    <figcaption>
-                                        <h3>
-                                            <a href="#">Vikram సినిమాలో క్లైమాక్స్‌లో 5 నిమిషాల ఒక్క సీన్ కోసం Suriya
-                                                ఎంత రెమ్యూనరేషన్ తీసుకున్నాడో తెలిస్తే..</a>
-                                        </h3>
-                                        <p>బాక్సాఫీస్ హిట్‌లతో సంబంధం లేకుండా ప్రయోగాలు చేసే నటుడు కమల్ హాసన్ (Kamal
-                                            Haasan). ఆయన తాజాగా నటించిన చిత్రం ‘విక్రమ్’ (Vikram). యాక్షన్ థ్రిల్లర్‌గా
-                                            రూపొందింది. స్టార్ డైరెక్టర్ లోకేష్ కనకరాజ్ </p>
-                                    </figcaption>
-                                </figure>
-                                <button class="load-more-btn">Load More</button>
-                            </div>
+                        <h1 class="articleHD">బంగాళాదుంప రసంలో అందం రహస్యం.. చర్మ సౌందర్యానికి ఇలా ఉపయోగిస్తే మచ్చలేని,
+                            తెల్లని ఛాయ మీసొంతం..</h1>
+                        <p class="sub-title">మీ ముఖంపై మచ్చలు ఏర్పడి, వృద్ధాప్య సంకేతాలు ముఖంపై కనిపించడం ప్రారంభించాయా?
+                            అయితే, బంగాళాదుంప రసం అందాన్ని కాపాడుకోవడంలో ప్రభావవంతంగా ఉంటుందని రుజువు చేస్తుంది.</p>
+                        <div class="photoDetailWrap">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="728" height="410" src="images/image19.jpeg" alt=""></a>
+                                    <span class="photoCount">1/5</span>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. </a></h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="728" height="410" src="images/image20.jpeg" alt=""></a>
+                                    <span class="photoCount">2/5</span>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. </a></h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="728" height="410" src="images/image21.jpeg" alt=""></a>
+                                    <span class="photoCount">3/5</span>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. </a></h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="728" height="410" src="images/image22.jpeg" alt=""></a>
+                                    <span class="photoCount">4/5</span>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. </a></h3>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img width="728" height="410" src="images/image23.jpeg" alt=""></a>
+                                    <span class="photoCount">5/5</span>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">It is a long established fact that a reader will be distracted by
+                                            the readable content of a page when looking at its layout. </a></h3>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -484,6 +437,72 @@
                     </div>
                 </div>
             </div>
+            <div class="relatedNews_Wrapper">
+                <div class="commonHD">
+                    <h2><a href="#">సంబంధిత వార్తలు</a></h2>
+                    <a href="#" class="moreNews">మరిన్ని చదవండి</a>
+                </div>
+                <div class="swiper commonSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img src="images/Rectangle193.jpeg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">Telangana Constable Jobs: ఏ జిల్లాలో ఎన్ని పోస్టులు..
+                                            జిల్లాల వారీగా ఎస్సై.. కానిస్టేబుల్</a></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img src="images/Rectangle193.jpeg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">Telangana Constable Jobs: ఏ జిల్లాలో ఎన్ని పోస్టులు..
+                                            జిల్లాల వారీగా ఎస్సై.. కానిస్టేబుల్</a></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img src="images/Rectangle193.jpeg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">Telangana Constable Jobs: ఏ జిల్లాలో ఎన్ని పోస్టులు..
+                                            జిల్లాల వారీగా ఎస్సై.. కానిస్టేబుల్</a></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img src="images/Rectangle193.jpeg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">Telangana Constable Jobs: ఏ జిల్లాలో ఎన్ని పోస్టులు..
+                                            జిల్లాల వారీగా ఎస్సై.. కానిస్టేబుల్</a></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <div class="image_wrap">
+                                    <a href="#"><img src="images/Rectangle193.jpeg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#">Telangana Constable Jobs: ఏ జిల్లాలో ఎన్ని పోస్టులు..
+                                            జిల్లాల వారీగా ఎస్సై.. కానిస్టేబుల్</a></h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="main_footer">
@@ -550,6 +569,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/theia-sticky-sidebar.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
     <script>
         $(document).ready(function () {
@@ -559,6 +579,32 @@
                         additionalMarginTop: 10
                     });
             }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".commonSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
         });
     </script>
 </body>
