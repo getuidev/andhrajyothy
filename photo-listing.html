@@ -225,44 +225,6 @@
             </div>
         </div>
     </header>
-    <div class="sticky_share">
-        <div class="shareW">
-            <div class="suscribe_chanel">
-                <a href="#" target="_blank" class="youtube_btn">
-                    <svg>
-                        <use href="#youtube"></use>
-                    </svg>
-                    Subscribe
-                </a>
-            </div>
-            <div class="goognews_btn">
-                <a href="#" target="_blank">
-                    <img width="136" height="30" src="images/googlenews.png" alt="">
-                </a>
-            </div>
-            <div id="sharenow" class="share_icon">
-                <h2>Share</h2>
-                <i class="share_btn">
-                    <svg>
-                        <use href="#share"></use>
-                    </svg>
-                </i>
-            </div>
-        </div>
-        <script>
-            document.querySelector('#sharenow').addEventListener('click', function () {
-                if (typeof navigator.share === 'undefined') {
-                    log("No share API available!");
-                } else {
-                    navigator.share({
-                        title: 'Add Title',
-                        url: '#',
-                        text: ''
-                    })
-                }
-            });
-        </script>
-    </div>
     <div class="container-fluid">
         <div class="container">
             <div class="adsCont HeaderTopAds MobAds"></div>
