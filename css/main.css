@@ -284,7 +284,6 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .connectUS ul{display:flex;justify-content:center}
 .connectUS ul li{display:inline-block;margin:0 5px}
 .connectUS ul li a{display:inline-block;width:36px;height:36px}
-.top_navbar{display:none}
 .latestNews_wrapper,.twoColumn_Layout{flex-wrap:wrap}
 .latestNews_wrapper .bigNews_Cont,.latestNews_wrapper .smallNews_Cont,.left_col,.right_col{width:100%}
 .right_col{margin-left:0}
