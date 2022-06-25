@@ -256,8 +256,8 @@ body.openMenu .MenuBtn i:nth-child(2){opacity:0;background:#000}
 body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) rotate(-45deg);background:#000}
 .menuNavigation{width:100%;float:left;padding:10px 10px 200px 10px;position:absolute;top:75px;left:0;z-index:8;height:100vh;background:#fff;overflow:auto;border-top:1px solid #d9d9d9}
 .menuNavigation::-webkit-scrollbar{display:none}
-.downloadApp{background:red;width:100%;padding:15px;border-radius:5px;text-align:center}
-.downloadApp a{color:#fff;text-transform:uppercase;font-weight:400;font-size:22px}
+.downloadApp{background:red;width:100%;padding:10px;border-radius:5px;text-align:center}
+.downloadApp a{color:#fff;text-transform:uppercase;font-weight:400;font-size:18px}
 .menuNavigation .FlexBox{margin:0 -10px}
 .menuNavigation .liveTV,.menuNavigation .topLinks{width:50%}
 .menuNavigation .liveTV{border-right:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;padding:10px;display:flex;align-items:center}
