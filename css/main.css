@@ -277,7 +277,7 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .videoLanding_Wrapper .smallNews_Listing figcaption h3 a{color:#fff;font-weight: 400;font-size: 14px;line-height: 18px;}
 .videoLanding_Wrapper .topCategory .smallNews_Listing{margin-top: -50px;padding:10px}
 .videoLanding_Wrapper .categCommon_Section{margin-bottom:15px;}
-.staticPage_Wrapper p{margin-bottom:10px;}
+.staticPage_Wrapper p{margin-bottom:10px;font-size:16px;line-height:1.5;font-weight:400;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
