@@ -17,16 +17,19 @@
 </head>
 
 <body>
+    <!-- this code goes below body start -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
         <symbol id="home" viewBox="0 0 48 48">
             <path d="M20,40V28h8v12h10V24h6L24,6L4,24h6v16H20z" />
             <path style="fill:none;" d="M0,0h48v48H0V0z" />
         </symbol>
-        <symbol viewBox="0 0 48 48" id="share">
-            <path style="fill: #000;" d="M39.7,31.1c-2.3,0-4.4,1-5.9,2.5l-17.4-8.5c0.1-0.4,0.1-0.8,0.1-1.2c0-0.4,0-0.8-0.1-1.2l17.3-8.4c1.5,1.6,3.6,2.6,5.9,2.6
-            c4.5,0,8.2-3.7,8.2-8.2c0-4.5-3.7-8.2-8.2-8.2s-8.2,3.6-8.2,8.2c0,0.4,0,0.8,0.1,1.2l-17.3,8.4c-1.5-1.6-3.6-2.6-5.9-2.6
-            c-4.5,0-8.2,3.7-8.2,8.2c0,4.5,3.6,8.2,8.2,8.2c2.3,0,4.4-1,5.9-2.5L31.6,38c-0.1,0.4-0.1,0.8-0.1,1.2c0,4.5,3.7,8.2,8.2,8.2
-            s8.2-3.6,8.2-8.2C47.8,34.8,44.2,31.1,39.7,31.1z" />
+        <symbol id="share-icon" viewBox="0 0 24 24">
+            <path d="M18.3,23.6c-0.4-0.1-0.8-0.2-1.1-0.3c-1.7-0.7-2.6-2.5-2.3-4.3c0-0.1,0-0.2-0.1-0.3c-2.2-1.3-4.5-2.5-6.7-3.8
+             c-0.1-0.1-0.2-0.1-0.3,0c-1.2,1-2.8,1.2-4.2,0.5c-1.4-0.7-2.3-2.2-2.1-3.7C1.6,10.2,2.4,9,3.8,8.5c1.4-0.6,2.8-0.3,4,0.6
+             c0.1,0.1,0.2,0.1,0.3,0.1c2.3-1.3,4.6-2.6,6.9-3.9c0-0.4-0.1-0.8-0.1-1.1c0.1-1.8,1.5-3.4,3.3-3.6c0.1,0,0.1,0,0.2,0
+             c0.3,0,0.5,0,0.8,0c0,0,0.1,0,0.1,0c1.6,0.2,3,1.5,3.3,3.1c0.3,1.7-0.5,3.3-2,4.1c-1.5,0.8-3.3,0.5-4.5-0.6C16,7,16,7,15.9,6.9
+             c-2.3,1.3-4.6,2.6-7,4c0.2,0.8,0.2,1.5,0,2.2c2.3,1.3,4.6,2.6,7,4C16,17,16,17,16.1,16.9c0.9-0.8,2-1.2,3.2-1
+             c1.8,0.2,3.2,1.8,3.3,3.5c0.1,1.9-1,3.6-2.9,4c-0.2,0-0.4,0.1-0.6,0.1C18.9,23.6,18.6,23.6,18.3,23.6z" />
         </symbol>
         <symbol viewBox="0 0 48 48" id="albumbtn">
             <g>
@@ -42,6 +45,7 @@
             <polygon points="113.3,169.9 113.3,56.6 207.7,113.2 " style="fill:#FF0000;" />
         </symbol>
     </svg>
+    <!-- code ends -->
     <div class="gutterLHS"><img src="images/Layer-160.jpeg" alt=""></div>
     <div class="gutterRHS"><img src="images/Layer-160.jpeg" alt=""></div>
     <header class="main_header">
@@ -220,32 +224,15 @@
             </div>
         </div>
     </header>
-    <div class="sticky_share">
-        <div class="shareW">
-            <div class="suscribe_chanel">
-                <a href="#" target="_blank" class="youtube_btn">
-                    <svg>
-                        <use href="#youtube"></use>
-                    </svg>
-                    Subscribe
-                </a>
-            </div>
-            <div class="goognews_btn">
-                <a href="#" target="_blank">
-                    <img width="136" height="30" src="images/googlenews.png" alt="">
-                </a>
-            </div>
-            <div id="sharenow" class="share_icon">
-                <h2>Share</h2>
-                <i class="share_btn">
-                    <svg>
-                        <use href="#share"></use>
-                    </svg>
-                </i>
-            </div>
+    <div class="flexBox">
+        <div class="fixed-social">
+            <span id="share"><svg>
+                    <use href="#share-icon"></use>
+                </svg></span>
         </div>
+
         <script>
-            document.querySelector('#sharenow').addEventListener('click', function () {
+            document.querySelector('#share').addEventListener('click', function () {
                 if (typeof navigator.share === 'undefined') {
                     log("No share API available!");
                 } else {
@@ -346,6 +333,21 @@
                                 <li><a href="#">#పొలిటికల్</a></li>
                                 <li><a href="#">#ఫుడ్</a></li>
                             </ul>
+                        </div>
+                        <div class="sub_n_follow">
+                            <div class="suscribe_chanel">
+                                <a href="#" target="_blank" class="youtube_btn">
+                                    <svg>
+                                        <use href="#youtube"></use>
+                                    </svg>
+                                    Subscribe
+                                </a>
+                            </div>
+                            <div class="goognews_btn">
+                                <a href="#" target="_blank">
+                                    <img width="136" height="30" src="images/gnews.png" alt="">
+                                </a>
+                            </div>
                         </div>
                         <div class="">
                             <div class="commonHD">
