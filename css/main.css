@@ -254,7 +254,7 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .photoDetailWrap figcaption{position:absolute;bottom:0;background:rgba(12,12,12,.6);padding:10px}
 .photoDetailWrap figcaption h3 a{color:#fff}
 .photoDetailWrap .photoCount{position:absolute;top:0;left:0;background:rgba(0,0,0,.7);color:#fff;font-size:27px;z-index:1;padding:5px 10px}
-.sub_n_follow{display:flex;align-items:center}
+.sub_n_follow{display:flex;align-items:center;margin:20px 0;}
 .suscribe_chanel{display:flex;align-items:center;margin-right:10px}
 .suscribe_chanel .youtube_btn{border-radius:4px;padding:6px 11px;font-size:12px;font-weight:600;display:flex;align-items:center;background:#ff1800;color:#fff;text-transform:uppercase}
 .suscribe_chanel .youtube_btn svg{height:14px;width:20px;margin-right:5px}
@@ -277,6 +277,7 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .videoLanding_Wrapper .smallNews_Listing figcaption h3 a{color:#fff;font-weight: 400;font-size: 14px;line-height: 18px;}
 .videoLanding_Wrapper .topCategory .smallNews_Listing{margin-top: -50px;padding:10px}
 .videoLanding_Wrapper .categCommon_Section{margin-bottom:15px;}
+.staticPage_Wrapper p{margin-bottom:10px;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
