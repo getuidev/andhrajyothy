@@ -278,6 +278,15 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .videoLanding_Wrapper .topCategory .smallNews_Listing{margin-top: -50px;padding:10px}
 .videoLanding_Wrapper .categCommon_Section{margin-bottom:15px;}
 .staticPage_Wrapper p{margin-bottom:10px;font-size:16px;line-height:1.5;font-weight:400;}
+.BlogPost{padding:0 0 10px 0}
+.blogHeading h2{color:#030A54;font-size:22px;font-weight:700;text-transform: capitalize;font-family:sans-serif;}
+.liveBlog{border-left:1px solid #d9d9d9;width:100%;margin-top:10px;padding-left:10px}
+.liveBlog ul li{padding-left:10px;position:relative;padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #d9d9d9}
+.liveBlog ul li:last-child{border-bottom:0}
+.liveBlog ul li::after{content:'';width:10px;height:10px;position:absolute;top:6px;left:-16px;border-radius:10px;background:#030A54;box-sizing:border-box}
+.liveBlog ul li p{margin-bottom:0;margin-top:10px;line-height:1.5}
+.liveBlog ul li strong{margin-top:10px;display: block;font-size:20px;}
+.liveBlog .timestamp span{font-family:sans-serif;color:#000;font-size:14px;line-height:20px;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
