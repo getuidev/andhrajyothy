@@ -304,6 +304,19 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .content_listing img.play_icon{position:absolute;width:24px;height:24px;right:15px;top:-15px}
 .VideoDetailwrap .article-img{position: relative;padding-bottom: 56.25%;padding-top: 25px;height: 0;}
 .VideoDetailwrap .article-img>iframe[src*="youtube"]{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.categoryPage_Wrapper .category_content{margin-bottom:10px;}
+.newsCategory_Wrapper .news_wrap{display: flex;flex-wrap:wrap;}
+.newsCategory_Wrapper .news_wrap .bigNews_Category{width:436px;margin-right:10px;}
+.newsCategory_Wrapper .news_wrap .bigNews_Category figure{margin-bottom:10px;}
+.newsCategory_Wrapper .news_wrap .smallNews_Category{width: calc(100% - 446px);}
+.newsCategory_Wrapper .news_wrap .smallNews_Category figure{margin-bottom:10px;}
+.newsCategory_Wrapper .news_wrap .smallNews_Category figcaption h3 a{font-size:16px;font-weight:400;}
+.newsCategory_Wrapper .news_wrap figure{position: relative;}
+.newsCategory_Wrapper .news_wrap .image_wrap img{display: block;width:100%;}
+.newsCategory_Wrapper .news_wrap figcaption{position: absolute;bottom:0;padding:10px;background: rgba(0, 0, 0, 0.6);}
+.newsCategory_Wrapper .news_wrap figcaption h3 a{color:#fff;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.newsCategory_Wrapper .common_wrapper .smallNews_Cont figure{width:49%;margin-right:2%}
+.newsCategory_Wrapper .common_wrapper .smallNews_Cont figure:nth-child(2n+2){margin-right:0;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
@@ -418,4 +431,7 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .videoLanding_Wrapper .topCategory .smallNews_Listing figure{width:100%;margin-right:0;margin-bottom:10px}
 .content_listing{flex-wrap: nowrap;overflow-x: auto;-webkit-overflow-scrolling: touch;}
 .content_listing figure{width: 82.5%;margin-right: 3%;flex: 0 0 auto;}
+.newsCategory_Wrapper .news_wrap .bigNews_Category,.newsCategory_Wrapper .common_wrapper .smallNews_Cont figure{width:100%;margin-right:0;}
+.newsCategory_Wrapper .news_wrap .smallNews_Category{width:100%;}
+.newsCategory_Wrapper .common_wrapper .smallNews_Cont figure:last-child{margin-bottom:0;}
 }
