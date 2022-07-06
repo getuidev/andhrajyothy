@@ -1,6 +1,6 @@
 *,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0;margin:0;outline:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-body{font-family:Mandali,sans-serif;color:#000;font-size:16px;line-height:1.2;background:#fff;-webkit-text-size-adjust:none}
+body{font-family:Mandali,sans-serif;color:#000;font-size:16px;line-height:1.5;background:#fff;-webkit-text-size-adjust:none}
 a{color:#000;text-decoration:none}
 a:hover{color:#a30000}
 ol,ul{list-style:none}
@@ -227,7 +227,7 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .relatedNews_Wrapper .commonSwiper .swiper-pagination-bullet-active{background:red;opacity:1}
 .fixed-social{display:none}
 .MobAds{display:none}
-.category_content_listing figure{display:flex;background:#f4f4f4;padding:10px;-webkit-box-shadow:0 10px 5px 0 rgba(0,0,0,.25);-moz-box-shadow:0 10px 5px 0 rgba(0,0,0,.25);box-shadow:0 10px 5px 0 rgba(0,0,0,.25);margin-bottom:20px}
+.category_content_listing figure{display:flex;background:#f4f4f4;padding:10px;box-shadow: 0px 7px 2px rgba(0, 0, 0, 0.25);margin-bottom:20px}
 .category_content_listing figure .image_wrap{width:210px;margin-right:10px}
 .category_content_listing figure .image_wrap img{display:block;width:100%}
 .category_content_listing figcaption{width:calc(100% - 220px)}
@@ -318,9 +318,42 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .newsCategory_Wrapper .common_wrapper .smallNews_Cont figure{width:49%;margin-right:2%}
 .newsCategory_Wrapper .common_wrapper .smallNews_Cont figure:nth-child(2n+2){margin-right:0;}
 .livetv_detailWrap{background: #EEEEEE;padding:15px;margin-bottom:15px;}
+.livetv_detailWrap h1{text-align: center;margin-bottom:10px;}
+.livetv_detailWrap h1 a{display: inline-block;}
 .livetv_detailWrap .socialShare{margin: 15px 0;}
 .livetv_detailWrap .socialShare ul{text-align: center;}
 .livetv_detailWrap .socialShare ul li a{margin:0 5px}
+.horoscope_title{background: #030A54;box-shadow: 0px 6px 0px #000000;color: #fff;text-align: center;padding: 15px;font-size: 24px;    font-weight: 600;margin: 20px 0 26px 0;}
+.horoscope_content_listing figure{display: flex;flex-wrap:wrap;background: #F1EEEE;box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.6);padding-bottom:10px;margin-bottom:30px;}
+.horoscope_content_listing figure h3{width: 100%;padding:10px;color:#fff;}
+.horoscope_content_listing figure .image_wrap{width: 80px;margin:0 10px;padding: 10px 0;}
+.horoscope_content_listing figcaption{width: calc(100% - 100px);padding:10px}
+.horoscope_content_listing figure.aries h3{background: #44A896;}
+.horoscope_content_listing figure.taurus h3{background: #B78637;}
+.horoscope_content_listing figure.gemini h3{background: #E78D2E;}
+.horoscope_content_listing figure.cancer h3{background: #909856;}
+.horoscope_content_listing figure.leo h3{background: #5FA482;}
+.horoscope_content_listing figure.virgo h3{background: #9B75A8;}
+.horoscope_content_listing figure.libra h3{background: #D54777;}
+.horoscope_content_listing figure.scorpio h3{background: #E15935;}
+.horoscope_content_listing figure.sagittarius h3{background: #88BB5E;}
+.horoscope_content_listing figure.capricorn h3{background: #AF4480;}
+.horoscope_content_listing figure.aquarius h3{background: #10739A;}
+.horoscope_content_listing figure.pisces h3{background: #307EA0;}
+.category_content_listing .search-box{position:relative;display:flex;margin-bottom:10px;}
+.category_content_listing .search-box input[type=text]{height:40px;padding:5px 15px;width:100%;border:0;border-radius:50px;color:#000;background: #E7E5E5;}
+.category_content_listing  .search-box .search-icon{float:right;position:absolute;right:-33px;top:-2px}
+.category_content_listing .search-box .search-icon img{width:24px;height:24px}
+.category_content_listing .search-form-btn{margin-bottom:0;background-color:#7ABB43;z-index:1;border:0;width:40px;height:40px;border-radius:50px;display:flex;justify-content:center;align-items:center;position:absolute;right:0}
+.category_content_listing .search-form-btn img{height:auto}
+.category_content_listing .category_filter .filter-nav {width: 100%;display: flex;justify-content: space-around;flex-wrap: wrap;margin-bottom: 10px;background-color: #fff;}
+.category_content_listing .category_filter .filter-nav li a{width: 40px;height: 40px;background: #D9D9D9;display: flex;justify-content: center;align-items: center;border-radius: 50%;margin: 0 5px 5px 5px;}
+.category_content_listing .category_filter .filtered_data{display: flex;justify-content: flex-start;flex-wrap: wrap;}
+.category_content_listing .category_filter .filtered_data figure{width:32%;margin:0 2% 20px 0;display: block;}
+.category_content_listing .category_filter .filtered_data figure:nth-child(3n+3){margin-right:0;}
+.category_content_listing .category_filter .filtered_data figure .image_wrap{width: 100%;margin-bottom:10px;}
+.category_content_listing .category_filter .filtered_data figcaption{width: 100%;}
+.category_content_listing .category_filter .filtered_data figcaption h3 a{font-size:16px;line-height:22px;margin-bottom:0;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
@@ -438,4 +471,7 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .newsCategory_Wrapper .news_wrap .bigNews_Category,.newsCategory_Wrapper .common_wrapper .smallNews_Cont figure{width:100%;margin-right:0;}
 .newsCategory_Wrapper .news_wrap .smallNews_Category{width:100%;}
 .newsCategory_Wrapper .common_wrapper .smallNews_Cont figure:last-child{margin-bottom:0;}
+.category_content_listing .category_filter .filter-nav{justify-content: flex-start;}
+.category_content_listing .category_filter .filter-nav li a{margin:0 4px 10px 4px;}
+.category_content_listing .category_filter .filtered_data figure{width:100%;margin-right:0;}
 }
