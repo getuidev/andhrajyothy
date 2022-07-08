@@ -324,28 +324,30 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .livetv_detailWrap .socialShare{margin: 15px 0;}
 .livetv_detailWrap .socialShare ul{text-align: center;}
 .livetv_detailWrap .socialShare ul li a{margin:0 5px}
-.horoscope_title{background: #030A54;box-shadow: 0px 6px 0px #000000;color: #fff;text-align: center;padding: 15px;font-size: 20px;font-weight: 600;margin: 20px 0 20px 0;line-height:26px;}
+.horoscope_title{background: #030A54;box-shadow: 0px 6px 0px #000000;color: #fff;text-align: center;padding: 15px;font-size: 20px;font-weight: 600;margin: 10px 0 20px 0;line-height:26px;}
 .horoscope_title a{color: #fff;}
 .horoscope_content_listing .accordion {background-color: #eee;color: #fff;cursor: pointer;padding: 10px;width: 100%;border: none;text-align: left;outline: none;transition: 0.4s;display: flex;justify-content: space-between;align-items: center;}
 .horoscope_content_listing .accordion::after {content: '\002B';color: #fff;font-weight: 700;}
 .horoscope_content_listing .accordion.active::after {content: "\2212";}
 .horoscope_content_listing .panel {max-height: 0;overflow: hidden;transition: max-height 0.2s ease-out;}
-.horoscope_content_listing figure{display: flex;flex-wrap:wrap;background: #F1EEEE;box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.6);padding-bottom:10px;margin-bottom:10px;}
-.horoscope_content_listing figure .image_wrap{width: 80px;margin:0 10px;padding: 10px 0;}
-.horoscope_content_listing figcaption{width: calc(100% - 100px);padding:10px}
-.horoscope_content_listing .aries,.horoscope_content_listing .taurus,.horoscope_content_listing .gemini,.horoscope_content_listing .cancer,.horoscope_content_listing .leo,.horoscope_content_listing .virgo,.horoscope_content_listing .libra,.horoscope_content_listing .libra,.horoscope_content_listing .scorpio,.horoscope_content_listing .sagittarius,.horoscope_content_listing .capricorn,.horoscope_content_listing .aquarius,.horoscope_content_listing .pisces{margin-bottom:10px;}
-.horoscope_content_listing .aries .accordion{background: #44A896;}
-.horoscope_content_listing .taurus .accordion{background: #B78637;}
-.horoscope_content_listing .gemini .accordion{background: #E78D2E;}
-.horoscope_content_listing .cancer .accordion{background: #909856;}
-.horoscope_content_listing .leo .accordion{background: #5FA482;}
-.horoscope_content_listing .virgo .accordion{background: #9B75A8;}
-.horoscope_content_listing .libra .accordion{background: #D54777;}
-.horoscope_content_listing .scorpio .accordion{background: #E15935;}
-.horoscope_content_listing .sagittarius .accordion{background: #88BB5E;}
-.horoscope_content_listing .capricorn .accordion{background: #AF4480;}
-.horoscope_content_listing .aquarius .accordion{background: #10739A;}
-.horoscope_content_listing .pisces .accordion{background: #307EA0;}
+.horoscope_content_listing .panel figure{margin-bottom:10px;}
+.horoscope_content_listing figure{display: block;background: #F1EEEE;box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.6);padding-bottom:10px;margin-bottom:20px;}
+.horoscope_content_listing figure h3{width: 100%;padding:10px;color:#fff;}
+.horoscope_content_listing figure .image_wrap{width: 80px;margin:0 10px;padding: 10px 0;float: left;}
+.horoscope_content_listing figcaption{padding:10px}
+.horoscope_content_listing div.aries,.horoscope_content_listing div.taurus,.horoscope_content_listing div.gemini,.horoscope_content_listing div.cancer,.horoscope_content_listing div.leo,.horoscope_content_listing div.virgo,.horoscope_content_listing div.libra,.horoscope_content_listing div.scorpio,.horoscope_content_listing div.sagittarius,.horoscope_content_listing div.capricorn,.horoscope_content_listing div.aquarius,.horoscope_content_listing div.pisces{margin-bottom:10px;}
+.horoscope_content_listing figure.aries h3,.horoscope_content_listing .aries .accordion{background: #44A896;}
+.horoscope_content_listing figure.taurus h3,.horoscope_content_listing .taurus .accordion{background: #B78637;}
+.horoscope_content_listing figure.gemini h3,.horoscope_content_listing .gemini .accordion{background: #E78D2E;}
+.horoscope_content_listing figure.cancer h3,.horoscope_content_listing .cancer .accordion{background: #909856;}
+.horoscope_content_listing figure.leo h3,.horoscope_content_listing .leo .accordion{background: #5FA482;}
+.horoscope_content_listing figure.virgo h3,.horoscope_content_listing .virgo .accordion{background: #9B75A8;}
+.horoscope_content_listing figure.libra h3,.horoscope_content_listing .libra .accordion{background: #D54777;}
+.horoscope_content_listing figure.scorpio h3,.horoscope_content_listing .scorpio .accordion{background: #E15935;}
+.horoscope_content_listing figure.sagittarius h3,.horoscope_content_listing .sagittarius .accordion{background: #88BB5E;}
+.horoscope_content_listing figure.capricorn h3,.horoscope_content_listing .capricorn .accordion{background: #AF4480;}
+.horoscope_content_listing figure.aquarius h3,.horoscope_content_listing .aquarius .accordion{background: #10739A;}
+.horoscope_content_listing figure.pisces h3,.horoscope_content_listing .pisces .accordion{background: #307EA0;}
 .category_content_listing .search-box{position:relative;display:flex;margin-bottom:10px;}
 .category_content_listing .search-box input[type=text]{height:40px;padding:5px 15px;width:100%;border:0;border-radius:50px;color:#000;background: #E7E5E5;}
 .category_content_listing  .search-box .search-icon{float:right;position:absolute;right:-33px;top:-2px}
@@ -374,6 +376,10 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .error_page{text-align: center;}
 .subCategories ul {border-bottom: 2px solid #000;margin-bottom: 10px;width:100%;white-space: nowrap;overflow-x: auto;overflow-y: hidden;}
 .subCategories ul li{display: inline-block;font-weight: 400;font-size: 15px;line-height: 36px;padding: 0 5px;}
+.navTabs ul{width:100%;white-space: nowrap;overflow-x: auto;overflow-y: hidden;}
+.navTabs ul li{display: inline-block;padding:0 10px;border-right: 1px solid rgba(0,0,0,.2);}
+.navTabs ul li:last-child{border-right: 0;padding-right:0;}
+.navTabs ul li.active a{color:#a30000;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
@@ -496,5 +502,5 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .category_content_listing .category_filter .filtered_data figure{width:100%;margin-right:0;}
 [data-pagination] a{font-size:14px}
 [data-pagination] ul li{width:30px;height:30px;border-radius:30px}
-.subCategories ul::-webkit-scrollbar{display: none;}
+.subCategories ul::-webkit-scrollbar,.navTabs ul::-webkit-scrollbar{display: none;}
 }
