@@ -380,6 +380,8 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .navTabs ul li{display: inline-block;padding:0 10px;border-right: 1px solid rgba(0,0,0,.2);}
 .navTabs ul li:last-child{border-right: 0;padding-right:0;}
 .navTabs ul li.active a{color:#a30000;}
+.navTabs .tablinks {border: 0;outline: 0;background: #97200d;color: #fff;padding: 10px;cursor: pointer;}
+.navTabs .tablinks:hover,.navTabs .tablinks.active{background:#030A54;}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
@@ -503,4 +505,5 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 [data-pagination] a{font-size:14px}
 [data-pagination] ul li{width:30px;height:30px;border-radius:30px}
 .subCategories ul::-webkit-scrollbar,.navTabs ul::-webkit-scrollbar{display: none;}
+.horoscope_title{font-size:16px;line-height:20px;padding:10px;}
 }
