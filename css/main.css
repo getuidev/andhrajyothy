@@ -375,7 +375,9 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .galleryWidget_Wrapper.videoGal .image_wrap a::after{content: '';background: url(../images/play.png);background-position: center;background-size: 28px;background-repeat: no-repeat;position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
 .error_page{text-align: center;}
 .subCategories ul {border-bottom: 2px solid #000;margin-bottom: 10px;width:100%;white-space: nowrap;overflow-x: auto;overflow-y: hidden;}
-.subCategories ul li{display: inline-block;font-weight: 400;font-size: 15px;line-height: 36px;padding: 0 5px;}
+.subCategories ul li{display: inline-block;font-weight: 400;font-size: 15px;line-height: 36px;}
+.subCategories ul li a{padding-right:5px;border-right:1px solid rgba(0,0,0,.2);margin-right:5px;}
+.subCategories ul li:last-child a{border-right: none;}
 .navTabs ul{width:100%;white-space: nowrap;overflow-x: auto;overflow-y: hidden;}
 .navTabs ul li{display: inline-block;padding:0 10px;border-right: 1px solid rgba(0,0,0,.2);}
 .navTabs ul li:last-child{border-right: 0;padding-right:0;}
