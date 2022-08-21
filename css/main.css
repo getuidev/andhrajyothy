@@ -252,7 +252,7 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .photoDetailWrap figure{margin-bottom:10px;position:relative}
 .photoDetailWrap figure:last-child{margin-bottom:0}
 .photoDetailWrap .image_wrap img{display:block;width:100%}
-.photoDetailWrap figcaption{position:absolute;bottom:0;background:rgba(12,12,12,.6);padding:10px}
+.photoDetailWrap figcaption{background:#0c0c0c;padding:10px}
 .photoDetailWrap figcaption h3 a{color:#fff}
 .photoDetailWrap .photoCount{position:absolute;top:0;left:0;background:rgba(0,0,0,.7);color:#fff;font-size:27px;z-index:1;padding:5px 10px}
 .sub_n_follow{display:flex;align-items:center;margin:20px 0}
