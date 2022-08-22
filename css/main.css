@@ -390,7 +390,7 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .abnAds_header{text-align:center;padding:5px 0}
 .abnAds_skip{background-color:#012c50;padding:10px;color:#fff;text-align:center;font-size:14px}
 .ad_image_mob{display:none}
-.ad_image_desk img,.ad_image_mob img{width:100%}
+.ad_image_desk,.ad_image_mob{text-align: center;}
 .abnAds_footer{text-align:center;padding:10px;font-size:12px}
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
