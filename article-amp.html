@@ -22,14 +22,29 @@
         ol,ul{list-style:none}
         .grey_bg{background:#eee;padding:10px;margin:0 -10px 20px -10px}
         .container{padding: 0 10px;max-width: 100%;}
-        .container-fluid{width:100%;margin-top:86px;}
+        .container-fluid{width:100%;margin-top:10px;}
         .adsCont{text-align:center;margin:0 0 10px 0;}
         .commonHD{width:100%;display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;position:relative;border-bottom:1px solid #d2d2d2}
         .commonHD h1,.commonHD h2{float:left;text-transform:capitalize;line-height:32px;font-size:20px;color:#000;display:flex;align-items:center;border-bottom:2px solid #030a54}
         .moreNews{color:#a30000}
+        .bottom_head {margin-top: 76px;}
         .top_head{padding:5px 0;position:fixed;width:100%;background:#fff;z-index:9;top:0;border-bottom:1px solid #d9d9d9}
         .top_head .container{display:flex;align-items:center;justify-content:space-between;}
         .site_logo amp-img{margin-right:20px;display:block}
+        .top_navbar{display:flex;align-items:center;background: #030a54;min-height: 45px;}
+        .top_navbar ul {white-space: nowrap;overflow-x: auto;overflow-y: hidden;}
+        .top_navbar ul li{display:inline-block;position:relative;font-weight:400;font-size:17px;line-height:36px;padding:0 9px}
+        .top_navbar ul li::after{content:'';background:#fff;opacity:.2;display:inline-block;width:5px;height:5px;position:absolute;right:-3px;top:18px}
+        .top_navbar ul li:first-child{padding-left:0}
+        .top_navbar ul li:last-child::after{display:none}
+        .top_navbar ul li a{color:#fff}
+        .top_navbar ul li svg{width:22px;height:22px;fill:#fff;vertical-align:middle}
+        .bottom_navbar{background:rgba(0,0,0,.1);min-height:42px;display:flex;align-items:center}
+        .bottom_navbar .container{display:flex;align-items:center;position:relative}
+        .bottom_left_menu{flex:1;justify-content: flex-start;white-space: nowrap;overflow-x: auto;overflow-y: hidden;}
+        .bottom_left_menu li{display:inline-block;font-weight:400;font-size:15px;line-height:36px;padding:0 5px}
+        .bottom_left_menu li:first-child{padding-left:0}
+        .bottom_right_menu{display:flex;align-items:center;justify-content:flex-end}
         #menu-toggle{cursor: pointer;width: 24px;}
         #menu-toggle span {display: block;width: 24px;height: 2px;margin-bottom: 5px;position: relative;background: #000;}
         #menu-toggle span:last-child {margin-bottom: 0px;}
@@ -105,6 +120,8 @@
         .footer_logo amp-img{display:block}
         .footer_social{display:flex;justify-content:space-evenly;align-items:center}
         .footer_social ul li{display:inline-block;width:24px;height:24px;margin:0 10px 0 0}
+        .top_navbar ul::-webkit-scrollbar{display:none}
+        .bottom_left_menu::-webkit-scrollbar{display:none}
     </style>
 </head>
 
@@ -148,6 +165,49 @@
                     <span></span>
                     <span></span>
                     <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_head">
+            <div class="top_navbar">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="#home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="#">ఆంధ్రప్రదేశ్</a></li>
+                        <li><a href="#">తెలంగాణ </a></li>
+                        <li><a href="#">జాతీయం</a></li>
+                        <li><a href="#">బిజినెస్</a></li>
+                        <li><a href="#">ఎడిటోరియల్</a></li>
+                        <li><a href="#">క్రీడాజ్యోతి</a></li>
+                        <li><a href="#">చిత్రజ్యోతి </a></li>
+                        <li><a href="#"> నవ్య</a></li>
+                        <li><a href="#">ప్రవాస</a></li>
+                        <li><a href="#">క్రైమ్ </a></li>
+                        <li><a href="#">రాశిఫలాలు </a></li>
+                        <li><a href="#">వంటలు</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_navbar">
+                <div class="container">
+                    <div class="bottom_left_menu">
+                        <ul>
+                            <li><a href="#">ePaper</a></li>
+                            <li><a href="#">Sunday</a></li>
+                            <li><a href="#">జాబ్స్</a></li>
+                            <li><a href="#">సాహిత్యం</a></li>
+                            <li><a href="#">ప్రత్యేకం</a></li>
+                            <li><a href="#">ఫొటోలు</a></li>
+                            <li><a href="#">వీడియోలు</a></li>
+                            <li><a href="#">ఓపెన్ హార్ట్</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
