@@ -488,7 +488,7 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .detailBody .leftSidebar{display:none}
 .detailBody .content,.leftSidebar,.rightSidebar{width:100%}
 .breadcrumb,.tags_wrapper ul{white-space:nowrap;overflow-x:auto;overflow-y:hidden}
-.detailBody .common_wrapper .smallNews_Cont figure{width:100%}
+.detailBody .common_wrapper .smallNews_Cont figure,.detailBody .content .common_wrapper .smallNews_Cont figure{width:100%}
 .fixed-social{position:fixed;right:0;top:200px;box-shadow:-5px 4px 10px 0 rgba(0,0,0,.2);width:51px;height:44px;background-color:#5b5b5b;border-radius:8px 0 0 8px;z-index:2;display:flex;justify-content:center;align-items:center;cursor:pointer;-webkit-backface-visibility:hidden}
 .fixed-social #share{width:30px;height:30px;fill:#fff;display:flex}
 .category_content_listing figure .image_wrap{width:118px}
