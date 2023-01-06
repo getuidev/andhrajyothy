@@ -75,6 +75,13 @@
         .breadcrumb{margin-bottom:5px;white-space:nowrap;overflow-x:auto;overflow-y:hidden}
         .breadcrumb li p{display:inline-block;margin:0;color:#000;font-size:12px;line-height:18px;padding:0;text-transform:uppercase}
         .breadcrumb li a{color:#000}
+        .liveBlink{color: #dc0000;text-transform: uppercase;font-size: 18px;font-weight: 700;}
+        .blinker{display:inline-block;background:rgba(216,2,2,1);border-radius:50%;box-shadow:0 0 0 0 rgba(216,2,2,1);margin:0 8px;height:10px;width:10px;transform:scale(1);animation:pulse-red 2s infinite}
+        @keyframes pulse-red{
+        0%{transform:scale(.95);box-shadow:0 0 0 0 rgba(216,2,2,.7)}
+        70%{transform:scale(1);box-shadow:0 0 0 10px rgba(216,2,2,0)}
+        100%{transform:scale(.95);box-shadow:0 0 0 0 rgba(216,2,2,0)}
+        }
         .articleHD{color:#030a54;font-size:26px;line-height:30px;word-break:keep-all;margin-bottom:10px}
         .AuthorInfo p{font-size:14px;color:#000;margin-bottom:5px}
         p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
@@ -311,6 +318,7 @@
                             </div>
                         </li>
                     </ol>
+                    <div class="liveBlink"><i class="blinker"></i> Live Now</div>
                     <h1 class="articleHD">రూ.200 పెట్టుబడి పెడితే.. రూ.8.80 లక్షల లాభం.. ఒక్కరోజులోనే ఈ మహిళ జీవితం
                         ఎలా మారిపోయిందంటే..</h1>
                     <div class="AuthorInfo">
