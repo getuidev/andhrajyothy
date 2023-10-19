@@ -1,9 +1,7 @@
-.electionPie_Wrapper{
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-}
-.electionPie_Container{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;background:#fff;border:1px solid #a3a3a3;border-radius:8px;padding:15px;}
+.election-heading{margin-bottom:10px;display:flex;justify-content:space-between}
+.election-heading h2{font-size:30px;color:#900000;font-family:sans-serif;text-transform:uppercase}
+.electionPie_Wrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
+.electionPie_Container{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;background:#fff;border:1px solid #a3a3a3;border-radius:8px;padding:15px}
 .electionPie_Container .leftWGD{width:70%}
 .electionPie_Container .rightWGD{display:flex;justify-content:space-between;flex-wrap:wrap;padding:8px}
 .electionPie_Container .rightWGD table td,.electionPie_Container .rightWGD table th{text-align:left;padding:5px;font-weight:500;font-size:18px;line-height:1;text-transform:capitalize;display:inline-flex;align-items:center}
@@ -14,3 +12,39 @@
 .majority_mark{font-weight:500;font-size:12px;line-height:19px;text-transform:capitalize;color:#7e7e7e;text-align:center}
 .seat-fraction{font-size:30px;font-weight:700;text-align:center;text-anchor:middle;font-family:sans-serif}
 .majority-txt{font-size:14px;font-weight:700;color:#000;text-align:center;text-transform:capitalize}
+.keyCandidateWrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
+.keyCandidateSwiper .swiper-slide{border:1px solid #d7d7d7;padding:10px;text-align:center;border-radius:10px}
+.keyCandidateSwiper .result-status{font-size:17px;font-family:Arial,Helvetica,sans-serif;font-weight:700;line-height:20px;text-transform:uppercase;color:#000;margin-bottom:10px}
+.keyCandidateSwiper .result-status.win{color:#01ae81}
+.keyCandidateSwiper .result-status.lost{color:#d92733}
+.keyCandidateSwiper .result-status.lead{color:#f7dd51}
+.keyCandidateSwiper .cand-image{width:100px;height:100px;margin:0 auto 10px auto}
+.keyCandidateSwiper .cand-image img{width:100%;display:block;border-radius:100px}
+.keyCandidateSwiper .cand-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:700;text-transform:uppercase;margin-bottom:5px}
+.keyCandidateSwiper .const-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:400;color:#a14242;text-transform:capitalize;margin-bottom:5px}
+.keyCandidateSwiper .party-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#fff;text-transform:uppercase;text-align:center;background-color:#000;padding:5px 10px;border-radius:10px}
+.keyCandidateSwiper .swiper-button-next,.keyCandidateSwiper .swiper-button-prev{width:34px;height:34px;background-color:#eee;border-radius:34px}
+.keyCandidateSwiper .swiper-button-next:after,.keyCandidateSwiper .swiper-button-prev:after{color:#8d8d8d;font-weight:700;font-size:16px}
+.keyCandidateSwiper .swiper-button-next:hover,.keyCandidateSwiper .swiper-button-prev:hover{background-color:#a00000}
+.keyCandidateSwiper .swiper-button-next:hover:after,.keyCandidateSwiper .swiper-button-prev:hover:after{color:#fff}
+.constituencyMapWrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
+.previousElectionHighlights{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
+.previousElectionHighlights strong{font-size:21px;line-height:35px;font-family:Verdana,Geneva,Tahoma,sans-serif;font-weight:400;text-transform:uppercase;display:block;margin-bottom:10px;color:#900000}
+.previousElectionHighlights .n-of-const{border:1px solid #a3a3a3;border-radius:10px;margin-bottom:20px}
+.previousElectionHighlights table{width:100%;border-collapse:collapse;text-align:left}
+.previousElectionHighlights table td,.previousElectionHighlights table th{padding:10px;font-size:14px;line-height:22px;font-weight:700;color:#000;font-family:sans-serif;text-transform:uppercase}
+.previousElectionHighlights table td{text-align:center}
+.previousElectionHighlights table tbody tr,.previousElectionHighlights table thead tr{border-bottom:1px solid #ccc}
+.previousElectionHighlights table tbody tr:last-child{border-bottom:none}
+.previousElectionHighlights .n-of-contest{border:1px solid #a3a3a3;border-radius:10px;margin-bottom:20px}
+.previousElectionHighlights .n-of-contest table td,.previousElectionHighlights .n-of-contest table th{border-right:1px solid #a3a3a3}
+.previousElectionHighlights .n-of-contest table td:last-child{border-right:none}
+.previousElectionHighlights .table-info{padding-left:25px}
+.previousElectionHighlights .table-info li strong{display:inline-block;font-size:14px;line-height:28px;font-weight:700;font-family:sans-serif;margin-bottom:0;color:#000;margin-right:10px}
+.previousElectionHighlights .table-info li span{display:inline-block;font-size:14px;line-height:28px;font-weight:700;font-family:sans-serif;margin-bottom:0;color:#8d0000}
+.previousElectionHighlights .electors{border:1px solid #a3a3a3;border-radius:10px;margin-bottom:20px}
+.previousElectionHighlights .electors table{text-align:center}
+.previousElectionHighlights .electors table th{color:#900000}
+.previousElectionHighlights .electors table td:first-child,.previousElectionHighlights .electors table th:first-child{text-align:left}
+.previousElectionHighlights .electors table tbody td,.previousElectionHighlights .electors table thead th{border-right:1px solid #a3a3a3}
+.previousElectionHighlights .electors table tbody td:last-child,.previousElectionHighlights .electors table thead th:last-child{border-right:none}
