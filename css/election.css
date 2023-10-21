@@ -121,12 +121,27 @@
 .yearDetailed_Result table tbody th,.yearDetailed_Result table thead th{color:#900000}
 .yearDetailed_Result table thead th span{color:#030a54}
 .yearDetailed_Result table thead{background-color:#fff}
-.autocomplete{position:relative;display:inline-flex;align-items: center;}
+.autocomplete{position:relative;display:inline-flex;align-items:center}
 .autocomplete-items{position:absolute;border:1px solid #dfdfdf;border-bottom:none;border-top:none;z-index:99;top:100%;left:0;right:0}
 .autocomplete-items div{padding:10px;cursor:pointer;background-color:#fff;border-bottom:1px solid #f3f3f3}
 .autocomplete-items div:hover{background-color:#e9e9e9}
 .autocomplete-active{background-color:#1e90ff!important;color:#fff}
-.search-map .search_btn{margin-left: 10px;}
+.search-map .search_btn{margin-left:10px}
+.electoralMap .mapCont{display:flex;justify-content:flex-start;flex-wrap:wrap;padding:0}
+.electoralMap .allConst{width:200px;padding:10px;border-right:1px solid #a3a3a3}
+.electoralMap .state-map{width:calc(100% - 200px);padding:10px}
+.electoralMap .svg-container{position:relative}
+.electoralMap .all-party{display:flex;margin:0 0 20px 0}
+.electoralMap .all-party li{flex:auto;display:flex;align-items:center;margin-right:10px;justify-content:space-between}
+.electoralMap .all-party li span:first-child{width:10px;height:36px;display:inline-block}
+.electoralMap .allConst .search_const{height:40px;display:flex;align-items:center;border:1px solid #e1e1e1;background:#fff;border-radius:10px;padding:9px}
+.electoralMap .allConst .search_const .mapsearch{border:0;outline:0;height:31px;width:100%;background-color:transparent}
+.electoralMap .allConst ul{padding:10px;height:500px;overflow-x:hidden;overflow-y:auto;padding-right:5px;}
+.electoralMap .allConst ul::-webkit-scrollbar{width: 5px;}
+.electoralMap .allConst ul::-webkit-scrollbar-track{background: #ededed;border-radius: 25px;}
+.electoralMap .allConst ul::-webkit-scrollbar-thumb{background: #000;border-radius: 25px;}
+.electoralMap .allConst ul li a{font-size:15px;line-height:26px;color:#a3a3a3;font-weight:400;font-family:Verdana,Geneva,Tahoma,sans-serif;text-transform:uppercase;display: block;margin-bottom:5px;}
+.electoralMap .map-svg {width: 100%;}
 @media(max-width:767px){
 .ElectionHighlights .table-info{padding-left:0}
 .ElectionHighlights .table-info li strong{margin-right:0}
@@ -142,4 +157,8 @@
 .resultTabular_Wrapper{padding:10px}
 .resultTabular_Data figure{width:40%;flex:0 0 auto}
 .resultTabular_Data::-webkit-scrollbar{display:none}
+.electoralMap .mapCont{flex-direction: unset;}
+.electoralMap .allConst{width: 100%;border-right: none;border-bottom: 1px solid #a3a3a3;}
+.electoralMap .state-map{width: 100%;}
+.electoralMap .allConst ul{height: 130px;}
 }
