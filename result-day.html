@@ -239,9 +239,38 @@
                             <div class="election-heading">
                                 <h2 class="h2">TELANGANA ASSEMBLY ELECTION RESULTS 2018</h2>
                                 <div class="ytabs">
-                                    <a href="" class="ytablinks">2023</a>
-                                    <a href="" class="ytablinks active">2018</a>
-                                    <a href="" class="ytablinks">2014</a>
+                                    <button class="ytablinks" onclick="openYear(event, 'id_2023')">2023</button>
+                                    <button class="ytablinks" onclick="openYear(event, 'id_2018')" id="defaultYearOpen">2018</button>
+                                    <button class="ytablinks" onclick="openYear(event, 'id_2014')">2014</button>
+                                </div>
+                            </div>
+                            <div id="id_2023" class="tabcontent">
+                                <div class="resultTabular_Data">
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/brs.png" alt=""></a></div>
+                                        <div class="party-name">brs</div>
+                                        <div class="vote-count">88</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/inc.png" alt=""></a></div>
+                                        <div class="party-name">con</div>
+                                        <div class="vote-count">19</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/bjp.png" alt=""></a></div>
+                                        <div class="party-name">bjp</div>
+                                        <div class="vote-count">07</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/aimim.png" alt=""></a></div>
+                                        <div class="party-name">aimim</div>
+                                        <div class="vote-count">07</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/no-img.png" alt=""></a></div>
+                                        <div class="party-name">oth</div>
+                                        <div class="vote-count">05</div>
+                                    </figure>
                                 </div>
                             </div>
                             <div id="id_2018" class="tabcontent">
@@ -272,9 +301,36 @@
                                         <div class="vote-count">05</div>
                                     </figure>
                                 </div>
-
                             </div>
-
+                            <div id="id_2014" class="tabcontent">
+                                <div class="resultTabular_Data">
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/brs.png" alt=""></a></div>
+                                        <div class="party-name">brs</div>
+                                        <div class="vote-count">88</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/inc.png" alt=""></a></div>
+                                        <div class="party-name">con</div>
+                                        <div class="vote-count">19</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/bjp.png" alt=""></a></div>
+                                        <div class="party-name">bjp</div>
+                                        <div class="vote-count">07</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/aimim.png" alt=""></a></div>
+                                        <div class="party-name">aimim</div>
+                                        <div class="vote-count">07</div>
+                                    </figure>
+                                    <figure>
+                                        <div class="party-image"><a href="#"><img width="100" height="100" src="images/no-img.png" alt=""></a></div>
+                                        <div class="party-name">oth</div>
+                                        <div class="vote-count">05</div>
+                                    </figure>
+                                </div>
+                            </div>
                             <div class="vote-margin-wrapper">
                                 <p>No. of ASSEMBLY ELECTION Seats 2018: <span>114</span></p>
                                 <div class="table-responsive">
@@ -714,14 +770,14 @@
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
-            tablinks = document.getElementsByClassName("tablinks");
+            tablinks = document.getElementsByClassName("ytablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
             document.getElementById(yearName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-        document.getElementById("defaultOpen").click();
+        document.getElementById("defaultYearOpen").click();
     </script>
 </body>
 
