@@ -70,7 +70,7 @@
 .categorypage-description .descText{max-height:130px;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:4;display:-webkit-box;-webkit-box-orient:vertical;text-align:left}
 .categorypage-description.growMore .descText{-webkit-line-clamp:unset;max-height:max-content;overflow:unset;-webkit-box-orient:unset;text-overflow:unset;display:flex;flex-wrap:wrap}
 .categorypage-description .descText p{font-size:17px;line-height:24px;font-family:Arial,Helvetica,sans-serif;font-weight:400;margin-bottom:10px}
-.categorypage-description .showMore{color:#900000;font-size:17px;font-weight:400;line-height:24px;cursor:pointer}
+.categorypage-description .showMore{color:#900000;font-size:14px;font-weight:400;line-height:20px;cursor:pointer}
 .categorypage-description .showMore::after{content:"";display:inline-block;width:6px;height:6px;border:solid #900000;border-width:0 1px 1px 0;margin:-3px 0 0 5px;vertical-align:middle;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
 .categorypage-description.growMore .showMore::after{-webkit-transform:rotate(-135deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-135deg);-o-transform:rotate(-135deg);transform:rotate(-135deg);margin:2px 0 0 5px}
 .yearTabs{display:inline-flex;align-items:center;justify-content:flex-end}
