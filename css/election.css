@@ -1,5 +1,5 @@
 .election-heading{margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.election-heading h2{font-size:20px;color:#900000;font-family:sans-serif;text-transform:uppercase}
+.election-heading h2{font-size:18px;color:#900000;font-family:sans-serif;text-transform:uppercase}
 .electionPie_Wrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
 .electionPie_Container{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;background:#fff;border:1px solid #a3a3a3;border-radius:8px;padding:15px}
 .electionPie_Container .leftWGD{width:70%}
@@ -76,6 +76,31 @@
 .yearTabs .tablinks.active{background-color:#d92733;color:#f7f7f7}
 .search-map form{border-radius:50px;background:#f7f7f7;line-height:1;height:36px;padding:9px;display:flex;align-items:center}
 .search-map .mapsearch{border:0;outline:0;height:22px;background-color:transparent}
+.resultTabular_Wrapper{margin-bottom:20px;background:#fafafa;padding:15px}
+.resultTabular_Data{display:flex;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:10px}
+.resultTabular_Data figure{border:1px solid #d7d7d7;padding:10px;text-align:center;border-radius:10px;width:18.4%;margin:0 2% 0 0}
+.resultTabular_Data figure:last-child{margin-right:0}
+.resultTabular_Data .party-image{width:80px;height:80px;margin:0 auto 10px auto;background:#eee;border-radius:100px}
+.resultTabular_Data .party-image img{width:100%;display:block;border-radius:100px}
+.resultTabular_Data .party-name{color:#282828;font-size:18px;line-height:24px;font-weight:700;font-family:sans-serif;text-transform:uppercase}
+.resultTabular_Data .vote-count{font-size:30px;line-height:36px;font-weight:700;font-family:Arial,Helvetica,sans-serif;color:#a14242}
+.resultTabular_Wrapper .tabcontent{margin-bottom:20px}
+.resultTabular_Wrapper .ytabs .ytablinks{font-size:16px;line-height:11px;font-weight:600;color:#575757;font-family:sans-serif;padding-right:5px;margin-right:5px;border-right:1px solid #575757;display:inline-flex;align-items:center}
+.resultTabular_Wrapper .ytabs .ytablinks:last-child{margin-right:0;padding-right:0;border-right:none}
+.resultTabular_Wrapper .ytablinks.active{color:#a14242}
+.resultTabular_Wrapper .vote-margin-wrapper p{font-size:19px;line-height:11px;font-family:sans-serif;font-weight:600;color:#900000;text-transform:uppercase;text-align:center;margin-bottom:10px}
+.resultTabular_Wrapper .vote-margin-wrapper p span{color:#030a54}
+.resultTabular_Wrapper .vote-margin-wrapper .table-responsive{background:#fff;border:1px solid #a3a3a3;border-radius:8px}
+.resultTabular_Wrapper .vote-margin-wrapper table{width:100%;text-align:center}
+.resultTabular_Wrapper .vote-margin-wrapper table tr{border-bottom:1px solid #a3a3a3}
+.resultTabular_Wrapper .vote-margin-wrapper table thead{background:#000;color:#fff}
+.resultTabular_Wrapper .vote-margin-wrapper table th{padding:8px;text-transform:uppercase;font-size:14px;line-height:20px;font-family:sans-serif}
+.resultTabular_Wrapper .vote-margin-wrapper table th:first-child{border-top-left-radius:8px}
+.resultTabular_Wrapper .vote-margin-wrapper table th:last-child{border-top-right-radius:8px}
+.resultTabular_Wrapper .vote-margin-wrapper table td{padding:8px;text-transform:uppercase;font-size:14px;line-height:20px;font-family:sans-serif;color:#282828}
+.resultTabular_Wrapper .vote-margin-wrapper table td{border-right:1px solid #a3a3a3}
+.vote-margin-wrapper .internal-table tr:last-child{border-bottom: none;}
+.vote-margin-wrapper .internal-table td:last-child{border-right: none;}
 @media(max-width:767px){
 .ElectionHighlights .table-info{padding-left:0}
 .ElectionHighlights .table-info li strong{margin-right:0}
