@@ -3,10 +3,8 @@
 .electionPie_Wrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
 .electionPie_Container{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;background:#fff;border:1px solid #a3a3a3;border-radius:8px;padding:15px}
 .electionPie_Container .leftWGD{width:70%}
-.electionPie_Container .rightWGD{display:flex;justify-content:space-between;flex-wrap:wrap;padding:8px}
-.party-view table tr{border:1px solid #efefef;cursor:pointer;margin-bottom:2%;display:block}
-.party-view table tr:hover{background-color:#f4f4fd}
-.party-view table td,.party-view table th{text-align:left;padding:5px;font-weight:500;font-size:18px;line-height:1;text-transform:capitalize;display:inline-flex;align-items:center}
+.electionPie_Container .rightWGD{width:25%;display:flex;justify-content:space-between;flex-wrap:wrap}
+.party-view{width:100%}
 .party-view .partyInfo span{width:17px;height:43px;margin-right:10px;display:inline-block}
 .svg_piechart{width:100%;position:relative;margin-bottom:10px}
 .filldot{fill:#cdcdcd;stroke:#cdcdcd}
@@ -15,16 +13,16 @@
 .seat-fraction{font-size:30px;font-weight:700;text-align:center;text-anchor:middle;font-family:sans-serif}
 .majority-txt{font-size:14px;font-weight:700;color:#000;text-align:center;text-transform:capitalize}
 .keyCandidateWrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
-.keyCandidateSwiper .swiper-slide{border:1px solid #d7d7d7;padding:10px;text-align:center;border-radius:10px}
-.keyCandidateSwiper .result-status{font-size:17px;font-family:Arial,Helvetica,sans-serif;font-weight:700;line-height:20px;text-transform:uppercase;color:#000;margin-bottom:10px}
-.keyCandidateSwiper .result-status.win{color:#01ae81}
-.keyCandidateSwiper .result-status.lost{color:#d92733}
-.keyCandidateSwiper .result-status.lead{color:#f7dd51}
-.keyCandidateSwiper .cand-image{width:100px;height:100px;margin:0 auto 10px auto}
-.keyCandidateSwiper .cand-image img{width:100%;display:block;border-radius:100px}
-.keyCandidateSwiper .cand-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:700;text-transform:uppercase;margin-bottom:5px}
-.keyCandidateSwiper .const-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:400;color:#a14242;text-transform:capitalize;margin-bottom:5px}
-.keyCandidateSwiper .party-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#fff;text-transform:uppercase;text-align:center;background-color:#000;padding:5px 10px;border-radius:10px}
+.candidate-card{border:1px solid #d7d7d7;padding:10px;text-align:center;border-radius:10px}
+.result-status{font-size:17px;font-family:Arial,Helvetica,sans-serif;font-weight:700;line-height:20px;text-transform:uppercase;color:#000;margin-bottom:10px}
+.result-status.win{color:#01ae81}
+.result-status.lost{color:#d92733}
+.result-status.lead{color:#f7dd51}
+.candidate-card .cand-image{width:100px;height:100px;margin:0 auto 10px auto}
+.candidate-card .cand-image img{width:100%;display:block;border-radius:100px}
+.candidate-card .cand-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:700;text-transform:uppercase;margin-bottom:5px}
+.candidate-card .const-name a{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:400;color:#a14242;text-transform:capitalize;margin-bottom:5px;display:block}
+.candidate-card .party-name{font-size:15px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:700;color:#fff;text-transform:uppercase;text-align:center;background-color:#000;padding:5px 10px;border-radius:10px}
 .keyCandidateSwiper .swiper-button-next,.keyCandidateSwiper .swiper-button-prev{width:34px;height:34px;background-color:#eee;border-radius:34px}
 .keyCandidateSwiper .swiper-button-next:after,.keyCandidateSwiper .swiper-button-prev:after{color:#8d8d8d;font-weight:700;font-size:16px}
 .keyCandidateSwiper .swiper-button-next:hover,.keyCandidateSwiper .swiper-button-prev:hover{background-color:#a00000}
@@ -32,8 +30,8 @@
 .constituencyMapWrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
 .constituencyMapWrapper .h3{font-size:22px;font-weight:700;color:#900000;font-family:sans-serif;text-transform:uppercase;margin-bottom:10px}
 .constituencyMapWrapper .mapCont{border:1px solid #a3a3a3;border-radius:10px;padding:10px;display:flex;justify-content:flex-start;position:relative;flex-wrap:wrap}
-.constituencyMapWrapper .mapCont .party-view{width:30%;margin-right:10%}
-.constituencyMapWrapper .map-svg{width:60%}
+.constituencyMapWrapper .mapCont .party-view{width:25%;margin-right:5%}
+.constituencyMapWrapper .map-svg{width:70%}
 .constituencyMapWrapper .map-svg svg{width:100%;height:100%}
 .constituencyMapWrapper .map-svg .fillpath{cursor:pointer;fill:#a3a3a3}
 .constituencyMapWrapper .map-svg .fillpath:hover{opacity:.6}
@@ -136,29 +134,58 @@
 .electoralMap .all-party li span:first-child{width:10px;height:36px;display:inline-block}
 .electoralMap .allConst .search_const{height:40px;display:flex;align-items:center;border:1px solid #e1e1e1;background:#fff;border-radius:10px;padding:9px}
 .electoralMap .allConst .search_const .mapsearch{border:0;outline:0;height:31px;width:100%;background-color:transparent}
-.electoralMap .allConst ul{padding:10px;height:500px;overflow-x:hidden;overflow-y:auto;padding-right:5px;}
-.electoralMap .allConst ul::-webkit-scrollbar{width: 5px;}
-.electoralMap .allConst ul::-webkit-scrollbar-track{background: #ededed;border-radius: 25px;}
-.electoralMap .allConst ul::-webkit-scrollbar-thumb{background: #000;border-radius: 25px;}
-.electoralMap .allConst ul li a{font-size:15px;line-height:26px;color:#a3a3a3;font-weight:400;font-family:Verdana,Geneva,Tahoma,sans-serif;text-transform:uppercase;display: block;margin-bottom:5px;}
-.electoralMap .map-svg {width: 100%;}
+.electoralMap .allConst ul{padding:10px;height:500px;overflow-x:hidden;overflow-y:auto;padding-right:5px}
+.electoralMap .allConst ul::-webkit-scrollbar{width:5px}
+.electoralMap .allConst ul::-webkit-scrollbar-track{background:#ededed;border-radius:25px}
+.electoralMap .allConst ul::-webkit-scrollbar-thumb{background:#000;border-radius:25px}
+.electoralMap .allConst ul li a{font-size:15px;line-height:26px;color:#a3a3a3;font-weight:400;font-family:Verdana,Geneva,Tahoma,sans-serif;text-transform:uppercase;display:block;margin-bottom:5px}
+.electoralMap .map-svg{width:100%}
+.candidateInfo_Widget{display:flex;justify-content:flex-start;align-items:flex-start;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #e5e6ee}
+.candidateInfo_Widget .candidate-card{width:200px;margin-right:20px}
+.candidateInfo_Widget .about-candidate{width:calc(100% - 220px)}
+.about-candidate .descText{max-height:235px;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:12;display:-webkit-box;-webkit-box-orient:vertical;text-align:left}
+.about-candidate .descText p{font-size:16px;line-height:20px;font-family:Arial,Helvetica,sans-serif;font-weight:400;color:#393939}
+.candidate-info-wrapper{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e5e6ee}
+.candidate-info-wrapper .table-responsive{border:1px solid #a3a3a3;border-radius:10px}
+.candidate-info-wrapper table{width:100%;border-collapse:collapse}
+.candidate-info-wrapper table thead{background-color:#f2f2f2}
+.candidate-info-wrapper table td,.candidate-info-wrapper table th{padding:10px;font-size:14px;line-height:22px;font-weight:700;color:#000;font-family:sans-serif;border-right:1px solid #a3a3a3}
+.candidate-info-wrapper table td{text-align:center;color:#8b0000}
+.candidate-info-wrapper table tbody tr,.candidate-info-wrapper table thead tr{border-bottom:1px solid #ccc}
+.candidate-info-wrapper table tbody tr:last-child{border-bottom:none}
+.candidate-info-wrapper table td:last-child,.candidate-info-wrapper table th:last-child{border-right:none}
+.candidatesListing_Wrapper{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #e5e6ee}
+.candidates-listing{display:flex;justify-content:flex-start;flex-wrap:wrap}
+.candidates-listing figure{width:23.5%;margin:0 2% 2% 0}
+.candidates-listing figure:nth-child(4n+4){margin-right:0}
+.load-more-post{display:flex;justify-content:center;align-items:center;margin:0 auto;border:0;background:#900000;color:#fff;font-size:16px;line-height:22px;font-family:Arial,Helvetica,sans-serif;font-weight:400;padding:5px 15px;cursor:pointer;text-transform:uppercase}
+.party-view .partyInfo{position:relative;cursor:pointer;z-index:1;display:flex;align-items:center;padding:5px;border:1px solid #efefef;margin-bottom:5px}
+.party-view .partyInfo span,.party-view .partyInfo strong{font-weight:600;font-size:18px;line-height:1;text-transform:capitalize;display:inline-flex;align-items:center}
+.party-view .partyInfo strong{margin-left:10px}
+.party-checkbox input[type=checkbox]{display:none}
+.party-checkbox input[type=checkbox]:checked+.partyInfo{background-color:#f4f4fd}
 @media(max-width:767px){
 .ElectionHighlights .table-info{padding-left:0}
 .ElectionHighlights .table-info li strong{margin-right:0}
 .electionPie_Container{padding:10px}
 .electionPie_Container .leftWGD{width:100%}
 .electionPie_Container .rightWGD{width:100%;padding:0}
-.party-view .partyInfo{width:49%;vertical-align:middle;float:left;margin-right:2%}
-.party-view .partyInfo:nth-child(2n+2){margin-right:0}
+.party-view .party-checkbox{width:49%;vertical-align:middle;float:left;margin-right:2%;margin-bottom:2%;}
+.party-view .party-checkbox:nth-child(2n+2){margin-right:0}
 .constituencyMapWrapper .mapCont{flex-direction:column-reverse}
 .constituencyMapWrapper .mapCont .party-view{width:100%;margin-right:0}
-.constituencyMapWrapper .map-svg{width:100%}
+.constituencyMapWrapper .map-svg{width:100%;margin-bottom:20px;}
 .constToolTip{right:5%}
 .resultTabular_Wrapper{padding:10px}
 .resultTabular_Data figure{width:40%;flex:0 0 auto}
 .resultTabular_Data::-webkit-scrollbar{display:none}
-.electoralMap .mapCont{flex-direction: unset;}
-.electoralMap .allConst{width: 100%;border-right: none;border-bottom: 1px solid #a3a3a3;}
-.electoralMap .state-map{width: 100%;}
-.electoralMap .allConst ul{height: 130px;}
+.electoralMap .mapCont{flex-direction:unset}
+.electoralMap .allConst{width:100%;border-right:none;border-bottom:1px solid #a3a3a3}
+.electoralMap .state-map{width:100%}
+.electoralMap .allConst ul{height:130px}
+.candidateInfo_Widget{flex-wrap:wrap}
+.candidateInfo_Widget .candidate-card{width:100%;margin-right:0;margin-bottom:20px}
+.candidateInfo_Widget .about-candidate{width:100%}
+.candidates-listing figure{width:48.5%;margin:0 3% 3% 0}
+.candidates-listing figure:nth-child(2n+2){margin-right:0}
 }
