@@ -164,17 +164,30 @@
 .party-view .partyInfo strong{margin-left:10px}
 .party-checkbox input[type=checkbox]{display:none}
 .party-checkbox input[type=checkbox]:checked+.partyInfo{background-color:#f4f4fd}
+.elecResultSwiper {padding-bottom: 30px;}
+.elecResultSwiper figure{border:1px solid #e0e0e0;border-radius:4px}
+.elecResultSwiper figure .figHead{background-color:#f2f2f2;text-align:center;font-size:14px;line-height:20px;font-weight:600;font-family:sans-serif;color:#000;text-transform:uppercase;padding:6px}
+.elecResultSwiper figcaption{padding:10px;background-color:#fff}
+.elecResultSwiper figcaption p{text-align:center;font-size:13px;font-weight:400;color:#6b6b6b;font-family:Verdana,Geneva,Tahoma,sans-serif}
+.elecResultSwiper figcaption p>strong{color:#000}
+.partyProgress-wrap .progress{padding:0;width:100%;height:25px;overflow:hidden;background:#c5c3c3;border-radius:25px;margin:8px 0 0 0;position:relative;display:flex;justify-content:space-between;align-items:center;}
+.partyProgress-wrap .bar{position:relative;min-width:1%;height:100%;}
+.partyProgress-wrap .party,.partyProgress-wrap .percentage{position:absolute;font-size:12px;font-weight:600;text-transform:uppercase;color:#fff;}
+.partyProgress-wrap .party{right:10px}
+.partyProgress-wrap .percentage{left:10px}
+.elecResultSwiper .swiper-pagination{bottom: 0;}
+.elecResultSwiper .swiper-pagination-bullet-active{background-color: #8b0000;}
 @media(max-width:767px){
 .ElectionHighlights .table-info{padding-left:0}
 .ElectionHighlights .table-info li strong{margin-right:0}
 .electionPie_Container{padding:10px}
 .electionPie_Container .leftWGD{width:100%}
 .electionPie_Container .rightWGD{width:100%;padding:0}
-.party-view .party-checkbox{width:49%;vertical-align:middle;float:left;margin-right:2%;margin-bottom:2%;}
+.party-view .party-checkbox{width:49%;vertical-align:middle;float:left;margin-right:2%;margin-bottom:2%}
 .party-view .party-checkbox:nth-child(2n+2){margin-right:0}
 .constituencyMapWrapper .mapCont{flex-direction:column-reverse}
 .constituencyMapWrapper .mapCont .party-view{width:100%;margin-right:0}
-.constituencyMapWrapper .map-svg{width:100%;margin-bottom:20px;}
+.constituencyMapWrapper .map-svg{width:100%;margin-bottom:20px}
 .constToolTip{right:5%}
 .resultTabular_Wrapper{padding:10px}
 .resultTabular_Data figure{width:40%;flex:0 0 auto}
@@ -188,4 +201,6 @@
 .candidateInfo_Widget .about-candidate{width:100%}
 .candidates-listing figure{width:48.5%;margin:0 3% 3% 0}
 .candidates-listing figure:nth-child(2n+2){margin-right:0}
+.elecResultSwiper{padding: 0;}
+.elecResultSwiper .swiper-pagination{display: none;}
 }
