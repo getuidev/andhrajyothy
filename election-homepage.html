@@ -221,7 +221,7 @@
 
     <!-- Election homepage widget -->
     <div class="container-fluid">
-        <div class="container">
+        <div class="container elecResultWrapper">
             <div class="election-heading">
                 <h2 class="h2">Live Election Result</h2>
             </div>
@@ -458,8 +458,9 @@
                         </figure>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
     <!-- ------------------------ -->
@@ -1883,9 +1884,9 @@
         var swiper = new Swiper(".elecResultSwiper", {
             slidesPerView: 1.3,
             spaceBetween: 15,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             breakpoints: {
                 640: {
