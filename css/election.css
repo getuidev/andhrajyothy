@@ -28,8 +28,8 @@
 .keyCandidateWrapper .swiper-button-next:after,.keyCandidateWrapper .swiper-button-prev:after{color:#8d8d8d;font-weight:700;font-size:12px}
 .keyCandidateWrapper .swiper-button-next:hover,.keyCandidateWrapper .swiper-button-prev:hover{background-color:#a00000}
 .keyCandidateWrapper .swiper-button-next:hover:after,.keyCandidateWrapper .swiper-button-prev:hover:after{color:#fff}
-.keyCandidateWrapper .swiper-button-prev{right:53px;left: auto;}
-.keyCandidateWrapper .swiper-button-next{right: 15px;}
+.keyCandidateWrapper .swiper-button-prev{right:38px;left: auto;}
+.keyCandidateWrapper .swiper-button-next{right: 0;}
 .constituencyMapWrapper{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid rgba(0,0,0,.2)}
 .constituencyMapWrapper .h3{font-size:22px;font-weight:700;color:#900000;font-family:sans-serif;text-transform:uppercase;margin-bottom:10px}
 .constituencyMapWrapper .mapCont{border:1px solid #a3a3a3;border-radius:10px;padding:10px;display:flex;justify-content:flex-start;position:relative;flex-wrap:wrap}
@@ -172,8 +172,8 @@
 .elecResultWrapper .swiper-button-next:after,.elecResultWrapper .swiper-button-prev:after{color:#790000;font-weight:700;font-size:12px}
 .elecResultWrapper .swiper-button-next:hover,.elecResultWrapper .swiper-button-prev:hover{background-color:#a00000}
 .elecResultWrapper .swiper-button-next:hover:after,.elecResultWrapper .swiper-button-prev:hover:after{color:#fff}
-.elecResultWrapper .swiper-button-prev{right:53px;left: auto;}
-.elecResultWrapper .swiper-button-next{right: 15px;}
+.elecResultWrapper .swiper-button-prev{right:38px;left: auto;}
+.elecResultWrapper .swiper-button-next{right: 0;}
 .elecResultSwiper figure{border:1px solid #e0e0e0;border-radius:4px}
 .elecResultSwiper figure .figHead{background-color:#f2f2f2;text-align:center;font-size:14px;line-height:20px;font-weight:600;font-family:sans-serif;color:#000;text-transform:uppercase;padding:6px}
 .elecResultSwiper figcaption{padding:10px;background-color:#fff}
