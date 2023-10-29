@@ -87,24 +87,24 @@
 .resultTabular_Data .party-image img{width:100%;display:block;border-radius:100px}
 .resultTabular_Data .party-name{color:#282828;font-size:18px;line-height:24px;font-weight:700;font-family:sans-serif;text-transform:uppercase}
 .resultTabular_Data .vote-count{font-size:30px;line-height:36px;font-weight:700;font-family:Arial,Helvetica,sans-serif;color:#a14242}
-.resultTabular_Wrapper .tabcontent{margin-bottom:20px;display:none}
+.resultTabular_Wrapper .tabcontent{display:none}
 .resultTabular_Wrapper .ytabs .ytablinks{font-size:16px;line-height:11px;font-weight:600;color:#575757;font-family:sans-serif;padding-right:5px;margin-right:5px;border-right:1px solid #575757;display:inline-flex;align-items:center;background:0 0;border-top:0;border-bottom:0;border-left:0;cursor:pointer}
 .resultTabular_Wrapper .ytabs .ytablinks:last-child{margin-right:0;padding-right:0;border-right:none}
 .resultTabular_Wrapper .ytablinks.active{color:#a14242}
-.resultTabular_Wrapper .vote-margin-wrapper p{font-size:19px;font-family:sans-serif;font-weight:600;color:#900000;text-align:center;margin-bottom:10px}
-.resultTabular_Wrapper .vote-margin-wrapper p span{color:#030a54}
-.resultTabular_Wrapper .vote-margin-wrapper .table-responsive{background:#000;border:1px solid #a3a3a3;border-radius:8px}
-.resultTabular_Wrapper .vote-margin-wrapper table{width:100%;text-align:center;border-collapse:collapse}
-.resultTabular_Wrapper .vote-margin-wrapper table tr{border-bottom:1px solid #a3a3a3}
-.resultTabular_Wrapper .vote-margin-wrapper table thead{background:#000;color:#fff}
-.resultTabular_Wrapper .vote-margin-wrapper table th{padding:6px;text-transform:capitalize;font-size:14px;line-height:20px;font-family:sans-serif}
-.resultTabular_Wrapper .vote-margin-wrapper table td{padding:6px;text-transform:capitalize;font-size:14px;line-height:20px;font-family:sans-serif;color:#282828;font-weight:600;background-color:#fff}
-.resultTabular_Wrapper .vote-margin-wrapper table td{border-right:1px solid #a3a3a3}
+.vote-margin-wrapper p{font-size:19px;font-family:sans-serif;font-weight:600;color:#900000;text-align:center;margin-bottom:10px}
+.vote-margin-wrapper p span{color:#030a54}
+.vote-margin-wrapper .table-responsive{background:#000;border:1px solid #a3a3a3;border-radius:8px;margin-bottom: 20px;}
+.vote-margin-wrapper table{width:100%;text-align:center;border-collapse:collapse}
+.vote-margin-wrapper table tr{border-bottom:1px solid #a3a3a3}
+.vote-margin-wrapper table thead{background:#000;color:#fff}
+.vote-margin-wrapper table th{padding:6px;text-transform:capitalize;font-size:14px;line-height:20px;font-family:sans-serif}
+.vote-margin-wrapper table td{padding:6px;text-transform:capitalize;font-size:14px;line-height:20px;font-family:sans-serif;color:#282828;font-weight:600;background-color:#fff}
+.vote-margin-wrapper table td{border-right:1px solid #a3a3a3}
 .vote-margin-wrapper .internal-table tr:last-child{border-bottom:none}
 .vote-margin-wrapper .internal-table td:last-child{border-right:none;color:#a14242}
 .vote-margin-wrapper .internal-table td:nth-last-child(2){color:#030a54}
-.resultTabular_Wrapper .vote-margin-wrapper table tr:last-child{border-bottom:none}
-.resultTabular_Wrapper .vote-margin-wrapper table td img{margin-left:10px;vertical-align:text-top;width:15px}
+.vote-margin-wrapper table tr:last-child{border-bottom:none}
+.vote-margin-wrapper table td img{margin-left:10px;vertical-align:text-top;width:15px}
 .table-responsive{width:100%;overflow:auto}
 .fixTableHead{overflow:auto;height:350px}
 .fixTableHead thead{position:sticky;top:0}
@@ -142,6 +142,7 @@
 .electoralMap .allConst ul::-webkit-scrollbar-track{background:#ededed;border-radius:25px}
 .electoralMap .allConst ul::-webkit-scrollbar-thumb{background:#000;border-radius:25px}
 .electoralMap .allConst ul li a{font-size:15px;line-height:26px;color:#a3a3a3;font-weight:400;font-family:Verdana,Geneva,Tahoma,sans-serif;text-transform:uppercase;display:block;margin-bottom:5px}
+.electoralMap .allConst ul li a:hover{color: #790000;}
 .electoralMap .map-svg{width:100%}
 .candidateInfo_Widget{display:flex;justify-content:flex-start;align-items:flex-start;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #e5e6ee}
 .candidateInfo_Widget .candidate-card{width:200px;margin-right:20px}
@@ -183,6 +184,9 @@
 .partyProgress-wrap .progress{padding:0;width:100%;height:20px;overflow:hidden;background:#f2f2f2;border-radius:10px;margin:5px 0 0 0;position:relative}
 .partyProgress-wrap .bar{position:relative;min-width:1%;height:100%}
 .partyProgress-wrap .party,.partyProgress-wrap .percentage{font-size:14px;font-weight:600;text-transform:uppercase;color:#000}
+.yLinks a{font-size:16px;line-height:11px;font-weight:600;color:#575757;font-family:sans-serif;padding-right:5px;margin-right:5px;border-right:1px solid #575757;display:inline-flex;align-items:center;}
+.yLinks a:last-child{margin-right:0;padding-right:0;border-right:none}
+.yLinks a.active{color:#a14242}
 @media(max-width:767px){
 .ElectionHighlights .table-info{padding-left:0}
 .ElectionHighlights .table-info li strong{margin-right:0}
