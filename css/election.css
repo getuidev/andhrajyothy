@@ -140,7 +140,7 @@ table{width:100%}
 .electoralMap .state-map{width:calc(100% - 200px);padding:10px}
 .electoralMap .svg-container{position:relative}
 .electoralMap .all-party{display:flex;margin:0 0 20px 0}
-.electoralMap .all-party li{flex:auto;display:flex;align-items:center;margin-right:10px;justify-content:space-between}
+.electoralMap .all-party li{flex:0 0 auto;display:flex;align-items:center;margin-right:10px;justify-content:space-between}
 .electoralMap .all-party li span:first-child{width:10px;height:36px;display:inline-block}
 .electoralMap .allConst .search_const{height:40px;display:flex;align-items:center;border:1px solid #e1e1e1;background:#fff;border-radius:10px;padding:9px}
 .electoralMap .allConst .search_const .mapsearch{border:0;outline:0;height:31px;width:100%;background-color:transparent}
