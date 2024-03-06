@@ -1627,18 +1627,16 @@
         });
     </script>
     <script>
-        if (screen.width >= 1024) { 
-            document.addEventListener('scroll', function () {
-                var scrollTop = window.scrollY;
-                var toggleClass = document.getElementsByTagName("body")[0];
-        
-                if (scrollTop >= 130) {
-                    toggleClass.classList.add('sticky');
-                } else {
-                    toggleClass.classList.remove('sticky');
-                }
-            });
-        }
+        document.addEventListener('scroll', function () {
+            var scrollTop = window.scrollY;
+            var toggleClass = document.getElementsByTagName("body")[0];
+    
+            if (scrollTop >= 130) {
+                toggleClass.classList.add('sticky');
+            } else {
+                toggleClass.classList.remove('sticky');
+            }
+        });
     </script>
 </body>
 

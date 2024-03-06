@@ -554,4 +554,5 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .liveTV_left_col{width:100%; margin-bottom: 10px;}
 .liveTV_right_col{width:100%; margin:0}
 .liveTV_wrapper{display:block;width:100%;background:#030a54;margin-bottom:20px;padding:10px}
+.sticky .top_navbar{position:unset;}
 }
