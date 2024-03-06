@@ -194,6 +194,7 @@ table{width:100%}
 .yLinks a{font-size:16px;line-height:11px;font-weight:600;color:#575757;font-family:sans-serif;padding-right:5px;margin-right:5px;border-right:1px solid #575757;display:inline-flex;align-items:center}
 .yLinks a:last-child{margin-right:0;padding-right:0;border-right:none}
 .yLinks a.active{color:#a14242}
+.sticky .top_navbar{top: 0;position: fixed;width: 100%;z-index: 9;transition: all 0.5s ease;}
 @media(max-width:767px){
 .ElectionHighlights .table-info{padding-left:0}
 .ElectionHighlights .table-info li strong{margin-right:0}
