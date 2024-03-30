@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="css/main-live.css" />
     <style>
       .electionCont_Wrapper .tabSwitcher{display:flex;justify-content: center;align-items: center;margin:10px 0}
-      .electionCont_Wrapper .tabSwitcher span{font-size:18px;line-height:24px;color:#fff;background-color:#030A54;margin:0 5px;padding:5px 10px;border-radius:50px;cursor: pointer;}
+      .electionCont_Wrapper .tabSwitcher span{font-size:18px;line-height:24px;color:#fff;background-color:#030A54;margin:0 5px;padding:5px 10px;border-radius:50px;cursor: pointer;display:flex;align-items: center;}
       .electionCont_Wrapper .tabSwitcher span.active{background-color: #8c0000;}
+      .electionCont_Wrapper .tabSwitcher span img{width:20px;margin-right:10px;}
       .electionCont_Wrapper .eltabSwitcher{display:inline-flex;justify-content:flex-end;align-items:center;margin-bottom:10px;background:#03094f;float:right;border-radius:50px}
       .electionCont_Wrapper .eltabSwitcher span{color:#fff;padding:5px 10px;cursor:pointer;font-size:15px;line-height:21px}
       .electionCont_Wrapper .eltabSwitcher span.active{background:#8c0000;border-radius:50px}
@@ -355,11 +356,16 @@
     </header>
     <div class="container-fluid">
       <div class="container">
-        <div class="adsCont"></div>
+        <div class="customAds onlyWebADS">
+          <a href="#"><img width="832" height="113" src="images/banner4.png" alt=""></a>
+        </div>
+        <div class="customAds onlyMobileADS">
+          <a href="#"><img width="320" height="100" src="images/banners_mobile2.PNG" alt=""></a>
+        </div>
         <div class="electionCont_Wrapper">
           <div class="tabSwitcher">
-            <span class="active">ఆఆధపదశ ఎననకల లవ అపపటట</span>
-            <span>లక‌సభ ఎననకల లవ అపపటట</span>
+            <span class="active"><img width="20" height="20" src="images/stream-icon.svg" alt=""> ఆఆధపదశ ఎననకల లవ అపపటట</span>
+            <span><img width="20" height="20" src="images/stream-icon.svg" alt=""> లక‌సభ ఎననకల లవ అపపటట</span>
           </div>
           <div class="eltabSwitcher">
             <span>Loksabha</span>
