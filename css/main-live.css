@@ -123,7 +123,7 @@ to{opacity:1}
 .videoSwiper figcaption{position:absolute;bottom:0;background:rgba(0,0,0,.7);padding:10px;width:100%}
 .videoSwiper figcaption h3{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .videoSwiper figcaption h3 a{color:#fff}
-.videoSwiper figcaption .play_icon{margin-top:-24px;float:right}
+.videoSwiper figcaption .play_icon{margin-top:-24px;float:right;}
 .videoSwiper .swiper-pagination{bottom:0}
 .videoSwiper .swiper-pagination-bullet{background:#fff;opacity:.2;border-radius:0}
 .videoSwiper .swiper-pagination-bullet-active{background:#fff;opacity:1}
@@ -414,8 +414,10 @@ p.sub-title{color:#000;font-size:18px;line-height:24px;word-break:keep-all}
 .liveTV_wrapper .moreNews{color:#fff}
 .liveTV_left_col{width:calc(100% - 415px)}
 .liveTV_right_col{width:400px;margin-left:15px}
-.sticky .top_navbar{top:0;position:fixed;width:100%;z-index:9;transition:all .5s ease}
-.sticky .gutterLHS,.sticky .gutterRHS{top:50px}
+
+.sticky .top_navbar{top: 0;position: fixed;width: 100%;z-index: 9;transition: all 0.5s ease;}
+.sticky .gutterLHS, .sticky .gutterRHS {top:50px}
+
 @media(max-width:767px){
 .gutterLHS,.gutterRHS{display:none}
 .adsCont{min-height:270px}
@@ -551,8 +553,10 @@ body.openMenu .MenuBtn i:nth-child(3){transform:translateY(-2px) translateX(0) r
 .liveTV_left_col{width:100%;margin-bottom:10px}
 .liveTV_right_col{width:100%;margin:0}
 .liveTV_wrapper{display:block;width:100%;background:#030a54;margin-bottom:20px;padding:10px}
-.content_listing figcaption,.newsCategory_Wrapper .news_wrap figcaption,.openRK_wrapper figcaption,.photoListing_Wrapper .bigNews_Listing figcaption,.videoLanding_Wrapper .smallNews_Listing figcaption,.videoLanding_Wrapper .topCategory .bigNews_Listing figcaption,.videoListing_Wrapper .bigNews_Listing figcaption,.videoSwiper figcaption{position:relative;background:#000}
+.newsCategory_Wrapper .news_wrap figcaption,.openRK_wrapper figcaption,.photoListing_Wrapper .bigNews_Listing figcaption,.videoLanding_Wrapper .smallNews_Listing figcaption,.videoListing_Wrapper .bigNews_Listing figcaption,.videoSwiper figcaption,.videoLanding_Wrapper .topCategory .bigNews_Listing figcaption,.content_listing figcaption{position:relative;background:#000}
 .videoSwiper figcaption h3{width:100%}
 .videoLanding_Wrapper .smallNews_Listing figcaption h3,.videoSwiper figcaption h3{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
-.sticky .top_navbar{position:unset}
+
+.sticky .top_navbar{top:75px}
+
 }
