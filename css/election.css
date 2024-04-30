@@ -106,7 +106,7 @@ table{width:100%}
 .vote-margin-wrapper table tr:last-child{border-bottom:none}
 .vote-margin-wrapper table td img{margin-left:10px;vertical-align:text-top;width:15px}
 .table-responsive{width:100%;overflow:auto}
-.fixTableHead{overflow:auto;height:350px;position:relative}
+.fixTableHead{height:350px;position:relative}
 .fixTableHead thead{position:sticky;top:0}
 .fixTableHead tfoot{position:sticky;bottom:-1px}
 .fixTableHead::-webkit-scrollbar{width:.25rem;height:0;display:block;background-color:#e4e4e4;border-radius:8px}
