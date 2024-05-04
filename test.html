@@ -98,13 +98,17 @@
       }
 
       .win-loose-table-container {
-        max-height: 400px;
+        height: 400px;
         overflow-y: auto;
         border: 1px solid #ccc;
+        position: relative;
       }
       .win-loose-table {
         width: 100%;
         border-collapse: collapse;
+        position: absolute;
+        top: 0;
+        left:0;
         
       }
       .win-loose-table th,
@@ -122,7 +126,35 @@
         /* border: none; */
       }
 
-      
+      /* Scrollbar Styles */
+      .win-loose-table-container::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      .win-loose-table-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      .win-loose-table-container::-webkit-scrollbar-thumb {
+        background: gray;
+      }
+
+      /* Horizontal Scrollbar Styles */
+      .win-loose-table-container::-webkit-scrollbar:horizontal {
+        height: 5px;
+      }
+
+      /* Horizontal Track */
+      .win-loose-table-container::-webkit-scrollbar-track:horizontal {
+        background: #f1f1f1;
+      }
+
+      /* Horizontal Handle */
+      .win-loose-table-container::-webkit-scrollbar-thumb:horizontal {
+        background: gray;
+      }
 
       .cons-link {
         text-decoration: none;
