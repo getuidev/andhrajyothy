@@ -98,17 +98,14 @@
       }
 
       .win-loose-table-container {
-        height: 400px;
+        max-height: 400px;
         overflow-y: auto;
         border: 1px solid #ccc;
-        position: relative;
+        -webkit-overflow-scrolling: touch;
       }
       .win-loose-table {
         width: 100%;
         border-collapse: collapse;
-        position: absolute;
-        top: 0;
-        left:0;
         
       }
       .win-loose-table th,
