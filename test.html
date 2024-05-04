@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="cache-control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.andhrajyothy.com/assets/images/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://static.andhrajyothy.com" />
+    <link
+      rel="preload stylesheet"
+      href="https://static.andhrajyothy.com/assets/googlefonts.css"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://static.andhrajyothy.com/assets/css/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://static.andhrajyothy.com/assets/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://static.andhrajyothy.com/assets/css/election.css"
+    />
+    <script src="https://static.andhrajyothy.com/assets/js/jquery.min.js"></script>
+    <style>
+      #win-loose-hideForNow {
+        display: none;
+      }
+
+      .cons-win-loose-tabbed-box {
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid #ccc; */
+        margin-bottom: 10px;
+      }
+
+      .cons-win-loose-tabbed-box-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid gray;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+      }
+
+      .cons-win-loose-tabbed-box-header h2 {
+        font-size: 20px;
+        color: #900000;
+      }
+
+      .cons-win-loose-tabs {
+        display: flex;
+        /* background-color: #f0f0f0; */
+        /* border-bottom: 1px solid #ccc; */
+        /* border:1px solid red; */
+      }
+
+      .cons-win-loose-tab-btn {
+        flex: 1;
+        padding: 8px 16px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 16px;
+        background-color: #ccc;
+        color: #900000;
+        transition: background-color 0.3s, color 0.3s;
+        margin: 5px 8px;
+      }
+
+      .cons-win-loose-tab-btn.active {
+        background-color: #900000;
+        color: white;
+      }
+
+      .cons-win-loose-tab-pane {
+        display: none;
+      }
+
+      .cons-win-loose-tab-pane.active {
+        display: block;
+      }
+
+      .win-loose-table-container {
+        max-height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+      }
+      .win-loose-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .win-loose-table th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ccc;
+      }
+      .win-loose-table th {
+        position: sticky;
+        top: 0;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        /* border: none; */
+      }
+
+      /* Scrollbar Styles */
+      .win-loose-table-container::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      .win-loose-table-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      .win-loose-table-container::-webkit-scrollbar-thumb {
+        background: gray;
+      }
+
+      /* Horizontal Scrollbar Styles */
+      .win-loose-table-container::-webkit-scrollbar:horizontal {
+        height: 5px;
+      }
+
+      /* Horizontal Track */
+      .win-loose-table-container::-webkit-scrollbar-track:horizontal {
+        background: #f1f1f1;
+      }
+
+      /* Horizontal Handle */
+      .win-loose-table-container::-webkit-scrollbar-thumb:horizontal {
+        background: gray;
+      }
+
+      .cons-link {
+        text-decoration: none;
+        color: black;
+      }
+
+      .cons-link:hover {
+        color: #900000;
+      }
+
+      @media (max-width:576px){
+          .cons-win-loose-tabbed-box-header {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 5px;
+        }
+
+        .cons-win-loose-tabbed-box-header h2 {
+           margin-bottom: 5px;
+           text-align: center;
+        }
+
+        }
+
+
+
+      @media (max-width: 766px) {
+        .cons-win-loose-tabbed-box-header h2 {
+          font-size: 16px;
+          color: #900000;
+        }
+       
+        .cons-win-loose-tab-btn {
+          flex: 1;
+          padding: 5px 10px;
+          font-weight: 600;
+          text-align: center;
+          cursor: pointer;
+          border: none;
+          border-radius: 16px;
+          background-color: #ccc;
+          color: #900000;
+          transition: background-color 0.3s, color 0.3s;
+          margin: 5px 8px;
+        }
+      }
+    </style>
+  </head>
+  <body style="padding: 10px">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="categoryPage_Wrapper">
+          <div class="theiaStickySidebar">
+            <div class="category_content">
+              <!-- ConsitituencyWise Winners/Loosers table HTML,JS -->
+              <div class="cons-win-loose-tabbed-box">
+                <div class="cons-win-loose-tabbed-box-header">
+                  <h2>
+                    ఆంధ్రప్రదేశ్ విజేత/ఓడిపోయిన నియోజకవర్గ ఫలితాలు
+                    <span id="yearChange"></span>
+                  </h2>
+                  <div class="cons-win-loose-tabs">
+                    <button
+                      class="cons-win-loose-tab-btn active"
+                      onclick="consWinLossShowTab(0)"
+                    >
+                      2024
+                    </button>
+                    <button
+                      class="cons-win-loose-tab-btn"
+                      onclick="consWinLossShowTab(1)"
+                    >
+                      2019
+                    </button>
+                    <button
+                      class="cons-win-loose-tab-btn"
+                      onclick="consWinLossShowTab(2)"
+                    >
+                      2014
+                    </button>
+                  </div>
+                </div>
+
+                <div class="cons-win-loose-tab-content">
+                  <div class="cons-win-loose-tab-pane active">
+                    <div class="win-loose-table-container">
+                      <table id="win-loose-table-2024" class="win-loose-table">
+                        <thead>
+                          <tr>
+                            <th>నియోజకవర్గం పేరు</th>
+                            <th>అభ్యర్థి పేరు</th>
+                            <th>పార్టీ</th>
+                            <th>ఓట్లు</th>
+                            <th>ఆదిక్యం</th>
+                            <!-- Add more columns as needed -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Table body will be populated dynamically using JavaScript -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="cons-win-loose-tab-pane">
+                    <div class="win-loose-table-container">
+                      <table id="win-loose-table-2019" class="win-loose-table">
+                        <thead>
+                          <tr>
+                            <th>నియోజకవర్గం పేరు</th>
+                            <th>అభ్యర్థి పేరు</th>
+                            <th>పార్టీ</th>
+                            <th>ఓట్లు</th>
+                            <th>ఆదిక్యం</th>
+                            <!-- Add more columns as needed -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Table body will be populated dynamically using JavaScript -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="cons-win-loose-tab-pane">
+                    <div class="win-loose-table-container">
+                      <table id="win-loose-table-2014" class="win-loose-table">
+                        <thead>
+                          <tr>
+                            <th>నియోజకవర్గం పేరు</th>
+                            <th>అభ్యర్థి పేరు</th>
+                            <th>పార్టీ</th>
+                            <th>ఓట్లు</th>
+                            <th>ఆదిక్యం</th>
+                            <!-- Add more columns as needed -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Table body will be populated dynamically using JavaScript -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function fill2024Table() {
+                  fetch(
+                    "https://ap-elections-data.s3.ap-south-1.amazonaws.com/ap-results-summary-2024.json"
+                  )
+                    .then((response) => response.json())
+                    .then((data) => {
+                      const tableBody = document.querySelector(
+                        "#win-loose-table-2024 tbody"
+                      );
+
+                      tableBody.innerHTML = "";
+
+                      data.ap_results_summary.forEach((row) => {
+                        let constituencyNameSlug = row.constituencynameen
+                          .toLowerCase()
+                          .replaceAll(" ", "")
+                          .replaceAll("(", "")
+                          .replaceAll(")", "")
+                          .replaceAll(".", "");
+                        let constituencyUrl =
+                          "/andhra-pradesh/assembly-elections/" +
+                          constituencyNameSlug +
+                          "-ap-" +
+                          row.constituencyid +
+                          ".html";
+
+                        const tr1 = document.createElement("tr");
+                        tr1.innerHTML = `
+<td rowspan="2" style="font-weight:600;"><a href="${constituencyUrl}" class="cons-link">${
+                          row.constituencyid
+                        } - ${row.constituencynamete}</a></td>
+<td style="font-weight:600;">${
+                          row.leadingcandidatenamete === null
+                            ? "-"
+                            : row.leadingcandidatenamete
+                        }<img width="20" height="20" src="https://www.andhrajyothy.com/assets/images/gthumb.png" alt="Won" style="margin-left:8px;"></td>
+<td style="color:${row.leadingPartyColour};font-weight:600;">${
+                          row.leadingpartyshortnamete === null
+                            ? "-"
+                            : row.leadingpartyshortnamete
+                        }</td>
+<td style="color:#030a54;font-weight:600;">${
+                          row.leadingcandidatevotes === null
+                            ? "-"
+                            : row.leadingcandidatevotes
+                        }</td>
+<td rowspan="2" style="color:#900000;font-weight:600;">${
+                          row.leadingcandidatevotes - row.trailingcandidatevotes
+                        }</td>
+<!-- Add more columns as needed -->
+`;
+                        tableBody.appendChild(tr1);
+
+                        // Create second <tr> element
+                        const tr2 = document.createElement("tr");
+                        tr2.innerHTML = `
+<td style="font-weight:600;">${
+                          row.trailingcandidatenamete === null
+                            ? "-"
+                            : row.trailingcandidatenamete
+                        }</td>
+<td style="color:${row.trailingPartyColour};font-weight:600;">${
+                          row.trailingpartyshortnamete === null
+                            ? "-"
+                            : row.trailingpartyshortnamete
+                        }</td>
+<td style="color:#030a54;font-weight:600;">${
+                          row.trailingcandidatevotes === null
+                            ? "-"
+                            : row.trailingcandidatevotes
+                        }</td>
+<!-- Add more columns as needed -->
+`;
+                        tableBody.appendChild(tr2);
+                      });
+                    })
+
+                    .catch((error) =>
+                      console.error("Error fetching data:", error)
+                    );
+                }
+
+                function fill2019Table() {
+                  fetch(
+                    "https://ap-elections-data.s3.ap-south-1.amazonaws.com/ap-results-summary-2019.json"
+                  )
+                    .then((response) => response.json())
+                    .then((data) => {
+                      const tableBody = document.querySelector(
+                        "#win-loose-table-2019 tbody"
+                      );
+
+                      data.ap_results_summary.forEach((row) => {
+                        let constituencyNameSlug = row.constituencynameen
+                          .toLowerCase()
+                          .replaceAll(" ", "")
+                          .replaceAll("(", "")
+                          .replaceAll(")", "")
+                          .replaceAll(".", "");
+                        let constituencyUrl =
+                          "/andhra-pradesh/assembly-elections/" +
+                          constituencyNameSlug +
+                          "-ap-" +
+                          row.constituencyid +
+                          ".html";
+
+                        const tr1 = document.createElement("tr");
+                        tr1.innerHTML = `
+                        <td rowspan="2" style="font-weight:600;"><a href="${constituencyUrl}" class="cons-link">${
+                          row.constituencyid
+                        } - ${row.constituencynamete}</a></td>
+                        <td style="font-weight:600;">${
+                          row.leadingcandidatenamete
+                        }<img width="20" height="20" src="https://www.andhrajyothy.com/assets/images/gthumb.png" alt="Won" style="margin-left:8px;"></td>
+                        <td style="color:${
+                          row.leadingPartyColour
+                        };font-weight:600;">${row.leadingpartyshortnamete}</td>
+                        <td style="color:#030a54;font-weight:600;">${
+                          row.leadingcandidatevotes
+                        }</td>
+                        <td rowspan="2" style="color:#900000;font-weight:600;">${
+                          row.leadingcandidatevotes - row.trailingcandidatevotes
+                        }</td>
+                        <!-- Add more columns as needed -->
+                      `;
+                        tableBody.appendChild(tr1);
+
+                        // Create second <tr> element
+                        const tr2 = document.createElement("tr");
+                        tr2.innerHTML = `
+                        <td style="font-weight:600;">${row.trailingcandidatenamete}</td>
+                        <td style="color:${row.trailingPartyColour};font-weight:600;">${row.trailingpartyshortnamete}</td>
+                        <td style="color:#030a54;font-weight:600;">${row.trailingcandidatevotes}</td>
+                        <!-- Add more columns as needed -->
+                      `;
+                        tableBody.appendChild(tr2);
+                      });
+                    })
+                    .catch((error) =>
+                      console.error("Error fetching data:", error)
+                    );
+                }
+
+                function fill2014Table() {
+                  fetch(
+                    "https://ap-elections-data.s3.ap-south-1.amazonaws.com/ap-results-summary-2014.json"
+                  )
+                    .then((response) => response.json())
+                    .then((data) => {
+                      const tableBody = document.querySelector(
+                        "#win-loose-table-2014 tbody"
+                      );
+
+                      data.ap_results_summary.forEach((row) => {
+                        let constituencyNameSlug = row.constituencynameen
+                          .toLowerCase()
+                          .replaceAll(" ", "")
+                          .replaceAll("(", "")
+                          .replaceAll(")", "")
+                          .replaceAll(".", "");
+                        let constituencyUrl =
+                          "/andhra-pradesh/assembly-elections/" +
+                          constituencyNameSlug +
+                          "-ap-" +
+                          row.constituencyid +
+                          ".html";
+
+                        const tr1 = document.createElement("tr");
+                        tr1.innerHTML = `
+                        <td rowspan="2" style="font-weight:600;"><a href="${constituencyUrl}" class="cons-link">${
+                          row.constituencyid
+                        } - ${row.constituencynamete}</a></td>
+                        <td style="font-weight:600;">${
+                          row.leadingcandidatenamete
+                        }<img width="20" height="20" src="https://www.andhrajyothy.com/assets/images/gthumb.png" alt="Won" style="margin-left:8px;"></td>
+                        <td style="color:${
+                          row.leadingPartyColour
+                        };font-weight:600;">${row.leadingpartyshortnamete}</td>
+                        <td style="color:#030a54;font-weight:600;">${
+                          row.leadingcandidatevotes
+                        }</td>
+                        <td rowspan="2" style="color:#900000;font-weight:600;">${
+                          row.leadingcandidatevotes - row.trailingcandidatevotes
+                        }</td>
+                        <!-- Add more columns as needed -->
+                      `;
+                        tableBody.appendChild(tr1);
+
+                        // Create second <tr> element
+                        const tr2 = document.createElement("tr");
+                        tr2.innerHTML = `
+                        <td style="font-weight:600;">${row.trailingcandidatenamete}</td>
+                        <td style="color:${row.trailingPartyColour};font-weight:600;">${row.trailingpartyshortnamete}</td>
+                        <td style="color:#030a54;font-weight:600;">${row.trailingcandidatevotes}</td>
+                        <!-- Add more columns as needed -->
+                      `;
+                        tableBody.appendChild(tr2);
+                      });
+                    })
+                    .catch((error) =>
+                      console.error("Error fetching data:", error)
+                    );
+                }
+
+                function consWinLossShowTab(tabIndex) {
+                  const tabPanes = document.querySelectorAll(
+                    ".cons-win-loose-tab-pane"
+                  );
+                  const tabBtns = document.querySelectorAll(
+                    ".cons-win-loose-tab-btn"
+                  );
+
+                  let yearForTable = document.getElementById("yearChange");
+                  if (tabIndex == 0) {
+                    yearForTable.textContent = "2024";
+                  } else if (tabIndex == 1) {
+                    yearForTable.textContent = "2019";
+                  } else if (tabIndex == 2) {
+                    yearForTable.textContent = "2014";
+                  }
+
+                  tabPanes.forEach((pane, index) => {
+                    if (index === tabIndex) {
+                      pane.classList.add("active");
+                      tabBtns[index].classList.add("active");
+                    } else {
+                      pane.classList.remove("active");
+                      tabBtns[index].classList.remove("active");
+                    }
+                  });
+                }
+
+                // Show the initial tab (Tab 1)
+                consWinLossShowTab(0);
+                fill2024Table();
+                fill2019Table();
+                fill2014Table();
+
+                setInterval(fill2024Table, 5000);
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://static.andhrajyothy.com/assets/js/swiper-bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://static.andhrajyothy.com/assets/js/theia-sticky-sidebar.min.js"
+    ></script>
+    <script
+      defer
+      src="https://static.andhrajyothy.com/assets/js/app.js"
+    ></script>
+  </body>
+</html>
