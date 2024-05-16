@@ -29,9 +29,12 @@
       .electionCont_Wrapper .table-responsive table tbody td img{margin-right:5px;vertical-align:middle;display:inline-block}
       .electionCont_Wrapper .table-responsive table tbody td,.electionCont_Wrapper .table-responsive table thead th{border-right:1px solid #cdcdcd;white-space:nowrap;}
       .electionCont_Wrapper .table-responsive table tbody td:last-child,.electionCont_Wrapper .table-responsive table thead th:last-child{border-right:none}
-      .elTableSwiper{padding-bottom:20px}
+      .elTableSwiper{padding-bottom:20px;position: static;}
       .elTableSwiper .swiper-pagination-bullet{border:2px solid #c7c9ca;width:10px;height:10px;opacity:1;background-color:#c7c9ca}
-      .elTableSwiper .swiper-pagination-bullet-active{background-color:#8c0000}
+      .elTableSwiper .swiper-button-next, .elTableSwiper .swiper-button-prev{background-color:rgba(255, 255, 255, .8);color:#8c0000;top:30px}
+      .swiper-button-next:after, .swiper-button-prev:after{font-size: 28px;font-weight: 700;}
+      .swiper-button-prev, .swiper-rtl .swiper-button-next{left: auto;right: 45px;}
+      .elTableSlider_Wrapper{position: relative;}
     </style>
   </head>
 
@@ -164,7 +167,8 @@
                   </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
       </section>
     </div>
@@ -179,9 +183,9 @@
             delay: 2500,
             disableOnInteraction: true,
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
         breakpoints: {
           640: {
